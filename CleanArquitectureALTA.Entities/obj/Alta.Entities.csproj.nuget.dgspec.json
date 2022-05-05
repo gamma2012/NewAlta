@@ -1,15 +1,15 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Soria\\Downloads\\Alta\\Git\\CleanArquitectureALTA\\CleanArquitectureALTA.Entities\\CleanArquitectureALTA.Entities.csproj": {}
+    "C:\\Users\\Soria\\Downloads\\Alta\\Git\\CleanArquitectureALTA\\CleanArquitectureALTA.Entities\\Alta.Entities.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Soria\\Downloads\\Alta\\Git\\CleanArquitectureALTA\\CleanArquitectureALTA.Entities\\CleanArquitectureALTA.Entities.csproj": {
+    "C:\\Users\\Soria\\Downloads\\Alta\\Git\\CleanArquitectureALTA\\CleanArquitectureALTA.Entities\\Alta.Entities.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Soria\\Downloads\\Alta\\Git\\CleanArquitectureALTA\\CleanArquitectureALTA.Entities\\CleanArquitectureALTA.Entities.csproj",
-        "projectName": "CleanArquitectureALTA.Entities",
-        "projectPath": "C:\\Users\\Soria\\Downloads\\Alta\\Git\\CleanArquitectureALTA\\CleanArquitectureALTA.Entities\\CleanArquitectureALTA.Entities.csproj",
+        "projectUniqueName": "C:\\Users\\Soria\\Downloads\\Alta\\Git\\CleanArquitectureALTA\\CleanArquitectureALTA.Entities\\Alta.Entities.csproj",
+        "projectName": "Alta.Entities",
+        "projectPath": "C:\\Users\\Soria\\Downloads\\Alta\\Git\\CleanArquitectureALTA\\CleanArquitectureALTA.Entities\\Alta.Entities.csproj",
         "packagesPath": "C:\\Users\\Soria\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\Soria\\Downloads\\Alta\\Git\\CleanArquitectureALTA\\CleanArquitectureALTA.Entities\\obj\\",
         "projectStyle": "PackageReference",
