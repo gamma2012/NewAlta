@@ -1,10 +1,11 @@
 ﻿using Alta.DTOs;
+using Alta.DTOs.HttpDTOs;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Threading.Tasks;
 
 
-namespace CleanArquitectureALTA.Controllers
+namespace Alta.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
@@ -19,7 +20,6 @@ namespace CleanArquitectureALTA.Controllers
         // TODO => implement filters
         [HttpPost("CREATE_LINE_INVENTORY_IN_IFD")]
         public async Task<IActionResult> CreateLineInventoryInIFD(CreateLineInventoryDTO data) {
-
             return null;
         }
     }

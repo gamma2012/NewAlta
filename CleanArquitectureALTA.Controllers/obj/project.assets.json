@@ -1025,14 +1025,27 @@
           "lib/netstandard1.3/System.Xml.XDocument.dll": {}
         }
       },
-      "CleanArquitectureALTA.DTOs/1.0.0": {
+      "Alta.DTOs/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v5.0",
         "compile": {
-          "bin/placeholder/CleanArquitectureALTA.DTOs.dll": {}
+          "bin/placeholder/Alta.DTOs.dll": {}
         },
         "runtime": {
-          "bin/placeholder/CleanArquitectureALTA.DTOs.dll": {}
+          "bin/placeholder/Alta.DTOs.dll": {}
+        }
+      },
+      "Alta.UseCasesPorts/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "Alta.DTOs": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Alta.UseCasesPorts.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Alta.UseCasesPorts.dll": {}
         }
       }
     }
@@ -3841,32 +3854,43 @@
         "system.xml.xdocument.nuspec"
       ]
     },
-    "CleanArquitectureALTA.DTOs/1.0.0": {
+    "Alta.DTOs/1.0.0": {
       "type": "project",
-      "path": "../CleanArquitectureALTA.DTOs/CleanArquitectureALTA.DTOs.csproj",
-      "msbuildProject": "../CleanArquitectureALTA.DTOs/CleanArquitectureALTA.DTOs.csproj"
+      "path": "../CleanArquitectureALTA.DTOs/Alta.DTOs.csproj",
+      "msbuildProject": "../CleanArquitectureALTA.DTOs/Alta.DTOs.csproj"
+    },
+    "Alta.UseCasesPorts/1.0.0": {
+      "type": "project",
+      "path": "../CleanArquitectureALTA.UseCasesPorts/Alta.UseCasesPorts.csproj",
+      "msbuildProject": "../CleanArquitectureALTA.UseCasesPorts/Alta.UseCasesPorts.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net5.0": [
-      "CleanArquitectureALTA.DTOs >= 1.0.0",
+      "Alta.DTOs >= 1.0.0",
+      "Alta.UseCasesPorts >= 1.0.0",
       "Microsoft.AspNetCore.Mvc.Core >= 2.2.5"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Alfon\\.nuget\\packages\\": {}
+    "C:\\Users\\lneyral1700\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Alfon\\Desktop\\desarrollo\\WebAPIAlta\\CleanArquitectureALTA.Controllers\\CleanArquitectureALTA.Controllers.csproj",
-      "projectName": "CleanArquitectureALTA.Controllers",
-      "projectPath": "C:\\Users\\Alfon\\Desktop\\desarrollo\\WebAPIAlta\\CleanArquitectureALTA.Controllers\\CleanArquitectureALTA.Controllers.csproj",
-      "packagesPath": "C:\\Users\\Alfon\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Alfon\\Desktop\\desarrollo\\WebAPIAlta\\CleanArquitectureALTA.Controllers\\obj\\",
+      "projectUniqueName": "D:\\Users\\Asus\\Documentos\\Atos\\Backend\\Refactor\\CleanArquitectureALTA\\CleanArquitectureALTA.Controllers\\Alta.Controllers.csproj",
+      "projectName": "Alta.Controllers",
+      "projectPath": "D:\\Users\\Asus\\Documentos\\Atos\\Backend\\Refactor\\CleanArquitectureALTA\\CleanArquitectureALTA.Controllers\\Alta.Controllers.csproj",
+      "packagesPath": "C:\\Users\\lneyral1700\\.nuget\\packages\\",
+      "outputPath": "D:\\Users\\Asus\\Documentos\\Atos\\Backend\\Refactor\\CleanArquitectureALTA\\CleanArquitectureALTA.Controllers\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\Alfon\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\lneyral1700\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -3880,8 +3904,11 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "C:\\Users\\Alfon\\Desktop\\desarrollo\\WebAPIAlta\\CleanArquitectureALTA.DTOs\\CleanArquitectureALTA.DTOs.csproj": {
-              "projectPath": "C:\\Users\\Alfon\\Desktop\\desarrollo\\WebAPIAlta\\CleanArquitectureALTA.DTOs\\CleanArquitectureALTA.DTOs.csproj"
+            "D:\\Users\\Asus\\Documentos\\Atos\\Backend\\Refactor\\CleanArquitectureALTA\\CleanArquitectureALTA.DTOs\\Alta.DTOs.csproj": {
+              "projectPath": "D:\\Users\\Asus\\Documentos\\Atos\\Backend\\Refactor\\CleanArquitectureALTA\\CleanArquitectureALTA.DTOs\\Alta.DTOs.csproj"
+            },
+            "D:\\Users\\Asus\\Documentos\\Atos\\Backend\\Refactor\\CleanArquitectureALTA\\CleanArquitectureALTA.UseCasesPorts\\Alta.UseCasesPorts.csproj": {
+              "projectPath": "D:\\Users\\Asus\\Documentos\\Atos\\Backend\\Refactor\\CleanArquitectureALTA\\CleanArquitectureALTA.UseCasesPorts\\Alta.UseCasesPorts.csproj"
             }
           }
         }
@@ -3916,7 +3943,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
       }
     }
   }

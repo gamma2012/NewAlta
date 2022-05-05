@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Alfon\\Desktop\\desarrollo\\WebAPIAlta\\CleanArquitectureALTA.Controllers\\CleanArquitectureALTA.Controllers.csproj": {}
+    "D:\\Users\\Asus\\Documentos\\Atos\\Backend\\Refactor\\CleanArquitectureALTA\\CleanArquitectureALTA.Controllers\\CleanArquitectureALTA.Controllers.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Alfon\\Desktop\\desarrollo\\WebAPIAlta\\CleanArquitectureALTA.Controllers\\CleanArquitectureALTA.Controllers.csproj": {
+    "D:\\Users\\Asus\\Documentos\\Atos\\Backend\\Refactor\\CleanArquitectureALTA\\CleanArquitectureALTA.Controllers\\CleanArquitectureALTA.Controllers.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Alfon\\Desktop\\desarrollo\\WebAPIAlta\\CleanArquitectureALTA.Controllers\\CleanArquitectureALTA.Controllers.csproj",
+        "projectUniqueName": "D:\\Users\\Asus\\Documentos\\Atos\\Backend\\Refactor\\CleanArquitectureALTA\\CleanArquitectureALTA.Controllers\\CleanArquitectureALTA.Controllers.csproj",
         "projectName": "CleanArquitectureALTA.Controllers",
-        "projectPath": "C:\\Users\\Alfon\\Desktop\\desarrollo\\WebAPIAlta\\CleanArquitectureALTA.Controllers\\CleanArquitectureALTA.Controllers.csproj",
-        "packagesPath": "C:\\Users\\Alfon\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Alfon\\Desktop\\desarrollo\\WebAPIAlta\\CleanArquitectureALTA.Controllers\\obj\\",
+        "projectPath": "D:\\Users\\Asus\\Documentos\\Atos\\Backend\\Refactor\\CleanArquitectureALTA\\CleanArquitectureALTA.Controllers\\CleanArquitectureALTA.Controllers.csproj",
+        "packagesPath": "C:\\Users\\lneyral1700\\.nuget\\packages\\",
+        "outputPath": "D:\\Users\\Asus\\Documentos\\Atos\\Backend\\Refactor\\CleanArquitectureALTA\\CleanArquitectureALTA.Controllers\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Alfon\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\lneyral1700\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -28,8 +32,8 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Users\\Alfon\\Desktop\\desarrollo\\WebAPIAlta\\CleanArquitectureALTA.DTOs\\CleanArquitectureALTA.DTOs.csproj": {
-                "projectPath": "C:\\Users\\Alfon\\Desktop\\desarrollo\\WebAPIAlta\\CleanArquitectureALTA.DTOs\\CleanArquitectureALTA.DTOs.csproj"
+              "D:\\Users\\Asus\\Documentos\\Atos\\Backend\\Refactor\\CleanArquitectureALTA\\CleanArquitectureALTA.DTOs\\CleanArquitectureALTA.DTOs.csproj": {
+                "projectPath": "D:\\Users\\Asus\\Documentos\\Atos\\Backend\\Refactor\\CleanArquitectureALTA\\CleanArquitectureALTA.DTOs\\CleanArquitectureALTA.DTOs.csproj"
               }
             }
           }
@@ -64,21 +68,25 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Alfon\\Desktop\\desarrollo\\WebAPIAlta\\CleanArquitectureALTA.DTOs\\CleanArquitectureALTA.DTOs.csproj": {
+    "D:\\Users\\Asus\\Documentos\\Atos\\Backend\\Refactor\\CleanArquitectureALTA\\CleanArquitectureALTA.DTOs\\CleanArquitectureALTA.DTOs.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Alfon\\Desktop\\desarrollo\\WebAPIAlta\\CleanArquitectureALTA.DTOs\\CleanArquitectureALTA.DTOs.csproj",
+        "projectUniqueName": "D:\\Users\\Asus\\Documentos\\Atos\\Backend\\Refactor\\CleanArquitectureALTA\\CleanArquitectureALTA.DTOs\\CleanArquitectureALTA.DTOs.csproj",
         "projectName": "CleanArquitectureALTA.DTOs",
-        "projectPath": "C:\\Users\\Alfon\\Desktop\\desarrollo\\WebAPIAlta\\CleanArquitectureALTA.DTOs\\CleanArquitectureALTA.DTOs.csproj",
-        "packagesPath": "C:\\Users\\Alfon\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Alfon\\Desktop\\desarrollo\\WebAPIAlta\\CleanArquitectureALTA.DTOs\\obj\\",
+        "projectPath": "D:\\Users\\Asus\\Documentos\\Atos\\Backend\\Refactor\\CleanArquitectureALTA\\CleanArquitectureALTA.DTOs\\CleanArquitectureALTA.DTOs.csproj",
+        "packagesPath": "C:\\Users\\lneyral1700\\.nuget\\packages\\",
+        "outputPath": "D:\\Users\\Asus\\Documentos\\Atos\\Backend\\Refactor\\CleanArquitectureALTA\\CleanArquitectureALTA.DTOs\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Alfon\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\lneyral1700\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -118,7 +126,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
         }
       }
     }

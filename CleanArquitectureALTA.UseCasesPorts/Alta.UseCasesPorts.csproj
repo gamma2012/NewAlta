@@ -5,8 +5,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="interfaces\" />
-    <Folder Include="POCOs\" />
+    <ProjectReference Include="..\CleanArquitectureALTA.DTOs\Alta.DTOs.csproj" />
   </ItemGroup>
 
 </Project>

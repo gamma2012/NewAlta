@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "VMKKYIZ8fJSpVHQEHvGzIILzkqynu5iROgrcqwbSzIL/CxL4t4EbcR44sPGcD1AfUMKUrJL8tTL2RiZB+rPB6A==",
+  "dgSpecHash": "wPdXrZYzEQEmStsHXoUbTYsVwAoEJI8hqNjwzTFcYgPiNFawC24qbO4NthWsBiMUjsacOF+JIMu0n2m3tIqopw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Alfon\\Desktop\\desarrollo\\WebAPIAlta\\CleanArquitectureALTA.Entities\\CleanArquitectureALTA.Entities.csproj",
+  "projectFilePath": "D:\\Users\\Asus\\Documentos\\Atos\\Backend\\Refactor\\CleanArquitectureALTA\\CleanArquitectureALTA.Entities\\Alta.Entities.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

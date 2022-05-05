@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "CszlNLOi+2XoMBZtEz5GZB12eTkSxzrDv1BVVNHNHvCPiAe/h7rRDYH5Kl7lnXl6EX2mxP10O9RwgKgAbdFK8w==",
+  "dgSpecHash": "acjVwJxHqFq6c6umCZ42mhDcsSWJ+C/lJTcZaCdp66nXpcbeiU2b2Y65JMyMIndxXap8+6MeHmqogayHx/Fmug==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Alfon\\Desktop\\desarrollo\\WebAPIAlta\\CleanArquitectureALTA.UseCasesPorts\\CleanArquitectureALTA.UseCasesPorts.csproj",
+  "projectFilePath": "D:\\Users\\Asus\\Documentos\\Atos\\Backend\\Refactor\\CleanArquitectureALTA\\CleanArquitectureALTA.UseCasesPorts\\Alta.UseCasesPorts.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

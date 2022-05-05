@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace CleanArquitectureALTA.EFCore
+namespace Alta.EFCore
 {
     public class Class1
     {
