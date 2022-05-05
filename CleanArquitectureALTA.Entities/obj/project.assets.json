@@ -8,24 +8,19 @@
     "net5.0": []
   },
   "packageFolders": {
-    "C:\\Users\\a847065\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\Soria\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\a847065\\Git\\CleanArquitectureALTA\\CleanArquitectureALTA.Entities\\CleanArquitectureALTA.Entities.csproj",
-      "projectName": "CleanArquitectureALTA.Entities",
-      "projectPath": "C:\\Users\\a847065\\Git\\CleanArquitectureALTA\\CleanArquitectureALTA.Entities\\CleanArquitectureALTA.Entities.csproj",
-      "packagesPath": "C:\\Users\\a847065\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\a847065\\Git\\CleanArquitectureALTA\\CleanArquitectureALTA.Entities\\obj\\",
+      "projectUniqueName": "C:\\Users\\Soria\\Downloads\\Alta\\Git\\CleanArquitectureALTA\\CleanArquitectureALTA.Entities\\Alta.Entities.csproj",
+      "projectName": "Alta.Entities",
+      "projectPath": "C:\\Users\\Soria\\Downloads\\Alta\\Git\\CleanArquitectureALTA\\CleanArquitectureALTA.Entities\\Alta.Entities.csproj",
+      "packagesPath": "C:\\Users\\Soria\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Soria\\Downloads\\Alta\\Git\\CleanArquitectureALTA\\CleanArquitectureALTA.Entities\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\a847065\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Users\\Soria\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -65,7 +60,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
       }
     }
   }
