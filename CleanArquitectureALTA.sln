@@ -11,6 +11,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "EnterpriseBusinessRules", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CleanArquitectureALTA.Entities", "CleanArquitectureALTA.Entities\CleanArquitectureALTA.Entities.csproj", "{526E320B-F87C-487A-9C2F-E0215EE28069}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "InterfaceAdapters", "InterfaceAdapters", "{C7C613A5-3BF7-434D-900F-C503D5F9F7D4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -28,6 +30,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{91BAE99D-99D5-4ACB-822D-F8912E46BE8F} = {38723A1F-43D4-422D-B0BD-9660AD6BC3A9}
 		{526E320B-F87C-487A-9C2F-E0215EE28069} = {91BAE99D-99D5-4ACB-822D-F8912E46BE8F}
+		{C7C613A5-3BF7-434D-900F-C503D5F9F7D4} = {38723A1F-43D4-422D-B0BD-9660AD6BC3A9}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {31D505A6-E48C-4DA5-99F2-99FD937008BA}
