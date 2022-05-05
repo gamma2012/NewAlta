@@ -1,0 +1,35 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32414.318
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{38723A1F-43D4-422D-B0BD-9660AD6BC3A9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{A68AE5EA-B6FB-494B-8FD6-015B45936E99}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "EnterpriseBusinessRules", "EnterpriseBusinessRules", "{91BAE99D-99D5-4ACB-822D-F8912E46BE8F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CleanArquitectureALTA.Entities", "CleanArquitectureALTA.Entities\CleanArquitectureALTA.Entities.csproj", "{526E320B-F87C-487A-9C2F-E0215EE28069}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{526E320B-F87C-487A-9C2F-E0215EE28069}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{526E320B-F87C-487A-9C2F-E0215EE28069}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{526E320B-F87C-487A-9C2F-E0215EE28069}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{526E320B-F87C-487A-9C2F-E0215EE28069}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{91BAE99D-99D5-4ACB-822D-F8912E46BE8F} = {38723A1F-43D4-422D-B0BD-9660AD6BC3A9}
+		{526E320B-F87C-487A-9C2F-E0215EE28069} = {91BAE99D-99D5-4ACB-822D-F8912E46BE8F}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {31D505A6-E48C-4DA5-99F2-99FD937008BA}
+	EndGlobalSection
+EndGlobal
