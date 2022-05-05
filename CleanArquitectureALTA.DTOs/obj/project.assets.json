@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Alfon\\Desktop\\desarrollo\\WebAPIAlta\\CleanArquitectureALTA.Entities\\CleanArquitectureALTA.Entities.csproj",
-      "projectName": "CleanArquitectureALTA.Entities",
-      "projectPath": "C:\\Users\\Alfon\\Desktop\\desarrollo\\WebAPIAlta\\CleanArquitectureALTA.Entities\\CleanArquitectureALTA.Entities.csproj",
+      "projectUniqueName": "C:\\Users\\Alfon\\Desktop\\desarrollo\\WebAPIAlta\\CleanArquitectureALTA.DTOs\\CleanArquitectureALTA.DTOs.csproj",
+      "projectName": "CleanArquitectureALTA.DTOs",
+      "projectPath": "C:\\Users\\Alfon\\Desktop\\desarrollo\\WebAPIAlta\\CleanArquitectureALTA.DTOs\\CleanArquitectureALTA.DTOs.csproj",
       "packagesPath": "C:\\Users\\Alfon\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Alfon\\Desktop\\desarrollo\\WebAPIAlta\\CleanArquitectureALTA.Entities\\obj\\",
+      "outputPath": "C:\\Users\\Alfon\\Desktop\\desarrollo\\WebAPIAlta\\CleanArquitectureALTA.DTOs\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Alfon\\AppData\\Roaming\\NuGet\\NuGet.Config",
