@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Soria\\Downloads\\Alta\\Git\\CleanArquitectureALTA\\CleanArquitectureALTA.Entities\\Alta.Entities.csproj": {}
+    "C:\\Users\\alexd\\Documents\\GitHub\\CleanArquitectureALTA\\CleanArquitectureALTA.Entities\\Alta.Entities.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Soria\\Downloads\\Alta\\Git\\CleanArquitectureALTA\\CleanArquitectureALTA.Entities\\Alta.Entities.csproj": {
+    "C:\\Users\\alexd\\Documents\\GitHub\\CleanArquitectureALTA\\CleanArquitectureALTA.Entities\\Alta.Entities.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Soria\\Downloads\\Alta\\Git\\CleanArquitectureALTA\\CleanArquitectureALTA.Entities\\Alta.Entities.csproj",
+        "projectUniqueName": "C:\\Users\\alexd\\Documents\\GitHub\\CleanArquitectureALTA\\CleanArquitectureALTA.Entities\\Alta.Entities.csproj",
         "projectName": "Alta.Entities",
-        "projectPath": "C:\\Users\\Soria\\Downloads\\Alta\\Git\\CleanArquitectureALTA\\CleanArquitectureALTA.Entities\\Alta.Entities.csproj",
-        "packagesPath": "C:\\Users\\Soria\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Soria\\Downloads\\Alta\\Git\\CleanArquitectureALTA\\CleanArquitectureALTA.Entities\\obj\\",
+        "projectPath": "C:\\Users\\alexd\\Documents\\GitHub\\CleanArquitectureALTA\\CleanArquitectureALTA.Entities\\Alta.Entities.csproj",
+        "packagesPath": "C:\\Users\\alexd\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\alexd\\Documents\\GitHub\\CleanArquitectureALTA\\CleanArquitectureALTA.Entities\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Soria\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\alexd\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -54,7 +58,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
         }
       }
     }
