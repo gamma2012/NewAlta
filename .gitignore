@@ -1,5 +1,6 @@
 .idea/
 .vs/
+.vs/*
 .vscode/
 
 .sonarqube/
@@ -7,6 +8,7 @@
 **/out
 **/release
 
+**/obj/
 **/obj
 **/bin
 *.DotSettings.user
