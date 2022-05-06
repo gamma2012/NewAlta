@@ -18,7 +18,7 @@ namespace Alta.Controllers
         
 
         // TODO => implement filters
-        [HttpPost("CREATE_LINE_INVENTORY_IN_IFD")]
+        [HttpPost("CREATE_LINE_INVENTORY_IN_IFD_DUMMY")]
         public async Task<IActionResult> CreateLineInventoryInIFD(CreateLineInventoryDTO data) {
             return null;
         }

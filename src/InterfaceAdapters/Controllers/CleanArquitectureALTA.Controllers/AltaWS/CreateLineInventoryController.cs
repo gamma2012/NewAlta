@@ -40,7 +40,7 @@ namespace Alta.Controllers.AltaWS
             }
 
 
-            return null;
+            return Ok();
         }
     }
 }

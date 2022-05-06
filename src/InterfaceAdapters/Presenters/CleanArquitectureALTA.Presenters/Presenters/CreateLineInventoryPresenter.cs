@@ -14,10 +14,10 @@ namespace Alta.Presenters.Presenters
     {
         public CreateLineInventoryDTO Content { get; private set; }
 
-        public Task Handle(CreateLineInventoryDTO createLineInventoryDTO)
+        public async Task Handle(CreateLineInventoryDTO createLineInventoryDTO)
         {
             Content = createLineInventoryDTO;
-            return Task.CompletedTask;
+            await Task.CompletedTask;
         }
     }
 }

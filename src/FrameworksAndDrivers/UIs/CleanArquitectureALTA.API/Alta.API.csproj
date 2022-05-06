@@ -8,4 +8,9 @@
     <PackageReference Include="Swashbuckle.AspNetCore" Version="5.6.3" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\InterfaceAdapters\Controllers\CleanArquitectureALTA.Controllers\Alta.Controllers.csproj" />
+    <ProjectReference Include="..\..\..\InterfaceAdapters\Gateways\CleanArquitectureALTA.IoC\Alta.IoC.csproj" />
+  </ItemGroup>
+
 </Project>

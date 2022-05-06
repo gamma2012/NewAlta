@@ -19,7 +19,7 @@ namespace Alta.UseCases.Interactor
         }
         public async Task Handle(CreateLineInventoryDTO createLineInventoryDTO)
         {
-            Console.WriteLine($"---> Completed Task {createLineInventoryDTO.CREATE_LINE_INVENTORY_IN_IFD.CTRL_SEG.TRANID}");
+            Console.WriteLine($"---> Completed Task: {createLineInventoryDTO.CREATE_LINE_INVENTORY_IN_IFD.CTRL_SEG.TRANID}");
             await Task.CompletedTask;
         }
     }
