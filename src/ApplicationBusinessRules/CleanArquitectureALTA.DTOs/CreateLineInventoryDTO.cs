@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Alta.DTOs.DtoAbstraction;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
@@ -23,19 +24,9 @@ namespace Alta.DTOs
         public CREATELINEINVENTORYSEG CREATE_LINE_INVENTORY_SEG { get; set; }
     }
 
-    public class CTRLSEG
+    public class CTRLSEG : CTRLSEGAbstractBase
     {
-        [JsonPropertyName("TRANID")]
-        public string TRANID { get; set; }
-
-        [JsonPropertyName("TRANDT")]
-        public string TRANDT { get; set; }
-
-        [JsonPropertyName("WCS_ID")]
-        public string WCS_ID { get; set; }
-
-        [JsonPropertyName("WH_ID")]
-        public string WH_ID { get; set; }
+        //this is only using the base abstract class
     }
 
     public class CREATELINEINVENTORYSEG

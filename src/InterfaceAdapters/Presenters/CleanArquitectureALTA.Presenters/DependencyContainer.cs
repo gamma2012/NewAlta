@@ -11,7 +11,7 @@ namespace Alta.Presenters
         {
             services.AddScoped<ICreateLineInventoryOutputPort, CreateLineInventoryPresenter>();
             services.AddScoped<IHeartBeatInitiateOutputPort, HeartBeatInitiatePresenter>();
-
+            services.AddScoped<IMovementConfirmOutputPort, MovementConfirmPresenter>();
             return services;
         }
     }
