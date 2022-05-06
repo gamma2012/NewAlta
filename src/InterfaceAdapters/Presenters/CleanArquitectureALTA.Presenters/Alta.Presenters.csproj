@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\ApplicationBusinessRules\CleanArquitectureALTA.DTOs\Alta.DTOs.csproj" />
+    <ProjectReference Include="..\..\..\ApplicationBusinessRules\CleanArquitectureALTA.UseCasesPorts\Alta.UseCasesPorts.csproj" />
+    <ProjectReference Include="..\..\..\ApplicationBusinessRules\CleanArquitectureALTA.UseCases\Alta.UseCases.csproj" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,17 @@
+C:\Users\a847065\Git\CleanArquitectureALTA\src\InterfaceAdapters\Controllers\CleanArquitectureALTA.Controllers\obj\Debug\net5.0\Alta.Controllers.csproj.AssemblyReference.cache
+C:\Users\a847065\Git\CleanArquitectureALTA\src\InterfaceAdapters\Controllers\CleanArquitectureALTA.Controllers\obj\Debug\net5.0\Alta.Controllers.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\a847065\Git\CleanArquitectureALTA\src\InterfaceAdapters\Controllers\CleanArquitectureALTA.Controllers\obj\Debug\net5.0\Alta.Controllers.AssemblyInfoInputs.cache
+C:\Users\a847065\Git\CleanArquitectureALTA\src\InterfaceAdapters\Controllers\CleanArquitectureALTA.Controllers\obj\Debug\net5.0\Alta.Controllers.AssemblyInfo.cs
+C:\Users\a847065\Git\CleanArquitectureALTA\src\InterfaceAdapters\Controllers\CleanArquitectureALTA.Controllers\obj\Debug\net5.0\Alta.Controllers.csproj.CoreCompileInputs.cache
+C:\Users\a847065\Git\CleanArquitectureALTA\src\InterfaceAdapters\Controllers\CleanArquitectureALTA.Controllers\bin\Debug\net5.0\Alta.Controllers.deps.json
+C:\Users\a847065\Git\CleanArquitectureALTA\src\InterfaceAdapters\Controllers\CleanArquitectureALTA.Controllers\bin\Debug\net5.0\Alta.Controllers.dll
+C:\Users\a847065\Git\CleanArquitectureALTA\src\InterfaceAdapters\Controllers\CleanArquitectureALTA.Controllers\bin\Debug\net5.0\Alta.Controllers.pdb
+C:\Users\a847065\Git\CleanArquitectureALTA\src\InterfaceAdapters\Controllers\CleanArquitectureALTA.Controllers\bin\Debug\net5.0\Alta.DTOs.dll
+C:\Users\a847065\Git\CleanArquitectureALTA\src\InterfaceAdapters\Controllers\CleanArquitectureALTA.Controllers\bin\Debug\net5.0\Alta.UseCasesPorts.dll
+C:\Users\a847065\Git\CleanArquitectureALTA\src\InterfaceAdapters\Controllers\CleanArquitectureALTA.Controllers\bin\Debug\net5.0\Alta.DTOs.pdb
+C:\Users\a847065\Git\CleanArquitectureALTA\src\InterfaceAdapters\Controllers\CleanArquitectureALTA.Controllers\bin\Debug\net5.0\Alta.UseCasesPorts.pdb
+C:\Users\a847065\Git\CleanArquitectureALTA\src\InterfaceAdapters\Controllers\CleanArquitectureALTA.Controllers\obj\Debug\net5.0\Alta.Controllers.csproj.CopyComplete
+C:\Users\a847065\Git\CleanArquitectureALTA\src\InterfaceAdapters\Controllers\CleanArquitectureALTA.Controllers\obj\Debug\net5.0\Alta.Controllers.dll
+C:\Users\a847065\Git\CleanArquitectureALTA\src\InterfaceAdapters\Controllers\CleanArquitectureALTA.Controllers\obj\Debug\net5.0\refint\Alta.Controllers.dll
+C:\Users\a847065\Git\CleanArquitectureALTA\src\InterfaceAdapters\Controllers\CleanArquitectureALTA.Controllers\obj\Debug\net5.0\Alta.Controllers.pdb
+C:\Users\a847065\Git\CleanArquitectureALTA\src\InterfaceAdapters\Controllers\CleanArquitectureALTA.Controllers\obj\Debug\net5.0\ref\Alta.Controllers.dll
