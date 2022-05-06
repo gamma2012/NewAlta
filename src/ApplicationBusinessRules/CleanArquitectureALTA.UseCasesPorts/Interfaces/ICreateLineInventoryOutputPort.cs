@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Alta.DTOs;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,6 +9,6 @@ namespace Alta.UseCasesPorts.Interfaces
 {
     public interface ICreateLineInventoryOutputPort
     {
-
+        Task Handle(CreateLineInventoryDTO createLineInventoryDTO);
     }
 }

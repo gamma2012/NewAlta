@@ -17,7 +17,6 @@ namespace Alta.Presenters.Presenters
         public Task Handle(CreateLineInventoryDTO createLineInventoryDTO)
         {
             Content = createLineInventoryDTO;
-
             return Task.CompletedTask;
         }
     }
