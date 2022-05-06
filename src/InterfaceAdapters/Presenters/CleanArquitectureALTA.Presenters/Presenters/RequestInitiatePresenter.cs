@@ -9,13 +9,13 @@ using System.Threading.Tasks;
 
 namespace Alta.Presenters.Presenters
 {
-    public class MovementConfirmPresenter : IMovementConfirmOutputPort, IPresenter<MovementConfirmDTO>
+    public class RequestInitiatePresenter : IRequestInitiateOutputPort, IPresenter<RequestInitiateDTO>
     {
-        public MovementConfirmDTO Content { get; private set; }
+        public RequestInitiateDTO Content { get; private set; }
 
-        public async Task Handle(MovementConfirmDTO movementConfirmDTO)
+        public async Task Handle(RequestInitiateDTO requestInitiateDTO)
         {
-            Content = movementConfirmDTO;
+            Content = requestInitiateDTO;
             await Task.CompletedTask;
         }
     }
