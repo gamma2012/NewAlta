@@ -4,7 +4,7 @@ using System.Threading.Tasks;
 
 namespace Alta.DTOs
 {
-    public class MovementConfirmDTO
+    public class MovementConfirmDTO : DtoBase
     {
         [JsonPropertyName("MOVEMENT_CONFIRM")]
         public MOVEMENTCONFIRM MOVEMENTCONFIRM { get; set; }

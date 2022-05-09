@@ -10,7 +10,7 @@ namespace Alta.EFCore.DataContext
         {
             var optionBuilder = new DbContextOptionsBuilder<AltaContext>();
 
-            optionBuilder.UseSqlServer("Server=localhost,1433; Initial Catalog= AltaWS; User=sa; Password=Passw0rd; TrustServerCertificate=True;");
+            optionBuilder.UseSqlServer();
             return new AltaContext(optionBuilder.Options);
         }
     }

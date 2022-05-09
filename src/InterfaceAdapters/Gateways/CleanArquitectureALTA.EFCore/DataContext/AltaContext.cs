@@ -16,6 +16,7 @@ namespace Alta.EFCore.DataContext
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+            modelBuilder.ApplyConfigurationsFromAssembly(typeof(AltaContext).Assembly);
         }
     }
 }

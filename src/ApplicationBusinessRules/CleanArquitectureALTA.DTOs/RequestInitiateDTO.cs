@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 namespace Alta.DTOs
 {
 
-    public class RequestInitiateDTO
+    public class RequestInitiateDTO : DtoBase
     {
         [JsonPropertyName("REQUEST")]
         public REQUEST REQUEST { get; set; }
