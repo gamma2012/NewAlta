@@ -1,0 +1,12 @@
+C:\Users\alexd\CleanArquitectureALTA\src\ApplicationBusinessRules\CleanArquitectureALTA.DTOs\bin\Debug\net5.0\Alta.DTOs.deps.json
+C:\Users\alexd\CleanArquitectureALTA\src\ApplicationBusinessRules\CleanArquitectureALTA.DTOs\bin\Debug\net5.0\Alta.DTOs.dll
+C:\Users\alexd\CleanArquitectureALTA\src\ApplicationBusinessRules\CleanArquitectureALTA.DTOs\bin\Debug\net5.0\Alta.DTOs.pdb
+C:\Users\alexd\CleanArquitectureALTA\src\ApplicationBusinessRules\CleanArquitectureALTA.DTOs\obj\Debug\net5.0\Alta.DTOs.csproj.AssemblyReference.cache
+C:\Users\alexd\CleanArquitectureALTA\src\ApplicationBusinessRules\CleanArquitectureALTA.DTOs\obj\Debug\net5.0\Alta.DTOs.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\alexd\CleanArquitectureALTA\src\ApplicationBusinessRules\CleanArquitectureALTA.DTOs\obj\Debug\net5.0\Alta.DTOs.AssemblyInfoInputs.cache
+C:\Users\alexd\CleanArquitectureALTA\src\ApplicationBusinessRules\CleanArquitectureALTA.DTOs\obj\Debug\net5.0\Alta.DTOs.AssemblyInfo.cs
+C:\Users\alexd\CleanArquitectureALTA\src\ApplicationBusinessRules\CleanArquitectureALTA.DTOs\obj\Debug\net5.0\Alta.DTOs.csproj.CoreCompileInputs.cache
+C:\Users\alexd\CleanArquitectureALTA\src\ApplicationBusinessRules\CleanArquitectureALTA.DTOs\obj\Debug\net5.0\Alta.DTOs.dll
+C:\Users\alexd\CleanArquitectureALTA\src\ApplicationBusinessRules\CleanArquitectureALTA.DTOs\obj\Debug\net5.0\refint\Alta.DTOs.dll
+C:\Users\alexd\CleanArquitectureALTA\src\ApplicationBusinessRules\CleanArquitectureALTA.DTOs\obj\Debug\net5.0\Alta.DTOs.pdb
+C:\Users\alexd\CleanArquitectureALTA\src\ApplicationBusinessRules\CleanArquitectureALTA.DTOs\obj\Debug\net5.0\ref\Alta.DTOs.dll

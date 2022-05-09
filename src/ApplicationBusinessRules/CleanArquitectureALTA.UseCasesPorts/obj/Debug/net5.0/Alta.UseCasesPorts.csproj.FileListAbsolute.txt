@@ -1,0 +1,15 @@
+C:\Users\alexd\CleanArquitectureALTA\src\ApplicationBusinessRules\CleanArquitectureALTA.UseCasesPorts\bin\Debug\net5.0\Alta.UseCasesPorts.deps.json
+C:\Users\alexd\CleanArquitectureALTA\src\ApplicationBusinessRules\CleanArquitectureALTA.UseCasesPorts\bin\Debug\net5.0\Alta.UseCasesPorts.dll
+C:\Users\alexd\CleanArquitectureALTA\src\ApplicationBusinessRules\CleanArquitectureALTA.UseCasesPorts\bin\Debug\net5.0\Alta.UseCasesPorts.pdb
+C:\Users\alexd\CleanArquitectureALTA\src\ApplicationBusinessRules\CleanArquitectureALTA.UseCasesPorts\bin\Debug\net5.0\Alta.DTOs.dll
+C:\Users\alexd\CleanArquitectureALTA\src\ApplicationBusinessRules\CleanArquitectureALTA.UseCasesPorts\bin\Debug\net5.0\Alta.DTOs.pdb
+C:\Users\alexd\CleanArquitectureALTA\src\ApplicationBusinessRules\CleanArquitectureALTA.UseCasesPorts\obj\Debug\net5.0\Alta.UseCasesPorts.csproj.AssemblyReference.cache
+C:\Users\alexd\CleanArquitectureALTA\src\ApplicationBusinessRules\CleanArquitectureALTA.UseCasesPorts\obj\Debug\net5.0\Alta.UseCasesPorts.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\alexd\CleanArquitectureALTA\src\ApplicationBusinessRules\CleanArquitectureALTA.UseCasesPorts\obj\Debug\net5.0\Alta.UseCasesPorts.AssemblyInfoInputs.cache
+C:\Users\alexd\CleanArquitectureALTA\src\ApplicationBusinessRules\CleanArquitectureALTA.UseCasesPorts\obj\Debug\net5.0\Alta.UseCasesPorts.AssemblyInfo.cs
+C:\Users\alexd\CleanArquitectureALTA\src\ApplicationBusinessRules\CleanArquitectureALTA.UseCasesPorts\obj\Debug\net5.0\Alta.UseCasesPorts.csproj.CoreCompileInputs.cache
+C:\Users\alexd\CleanArquitectureALTA\src\ApplicationBusinessRules\CleanArquitectureALTA.UseCasesPorts\obj\Debug\net5.0\Alta.UseCasesPorts.csproj.CopyComplete
+C:\Users\alexd\CleanArquitectureALTA\src\ApplicationBusinessRules\CleanArquitectureALTA.UseCasesPorts\obj\Debug\net5.0\Alta.UseCasesPorts.dll
+C:\Users\alexd\CleanArquitectureALTA\src\ApplicationBusinessRules\CleanArquitectureALTA.UseCasesPorts\obj\Debug\net5.0\refint\Alta.UseCasesPorts.dll
+C:\Users\alexd\CleanArquitectureALTA\src\ApplicationBusinessRules\CleanArquitectureALTA.UseCasesPorts\obj\Debug\net5.0\Alta.UseCasesPorts.pdb
+C:\Users\alexd\CleanArquitectureALTA\src\ApplicationBusinessRules\CleanArquitectureALTA.UseCasesPorts\obj\Debug\net5.0\ref\Alta.UseCasesPorts.dll

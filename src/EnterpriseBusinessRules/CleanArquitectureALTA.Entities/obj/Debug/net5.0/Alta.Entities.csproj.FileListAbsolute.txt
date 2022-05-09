@@ -1,0 +1,15 @@
+C:\Users\alexd\CleanArquitectureALTA\src\EnterpriseBusinessRules\CleanArquitectureALTA.Entities\bin\Debug\net5.0\Alta.Entities.deps.json
+C:\Users\alexd\CleanArquitectureALTA\src\EnterpriseBusinessRules\CleanArquitectureALTA.Entities\bin\Debug\net5.0\Alta.Entities.dll
+C:\Users\alexd\CleanArquitectureALTA\src\EnterpriseBusinessRules\CleanArquitectureALTA.Entities\bin\Debug\net5.0\Alta.Entities.pdb
+C:\Users\alexd\CleanArquitectureALTA\src\EnterpriseBusinessRules\CleanArquitectureALTA.Entities\bin\Debug\net5.0\Alta.DTOs.dll
+C:\Users\alexd\CleanArquitectureALTA\src\EnterpriseBusinessRules\CleanArquitectureALTA.Entities\bin\Debug\net5.0\Alta.DTOs.pdb
+C:\Users\alexd\CleanArquitectureALTA\src\EnterpriseBusinessRules\CleanArquitectureALTA.Entities\obj\Debug\net5.0\Alta.Entities.csproj.AssemblyReference.cache
+C:\Users\alexd\CleanArquitectureALTA\src\EnterpriseBusinessRules\CleanArquitectureALTA.Entities\obj\Debug\net5.0\Alta.Entities.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\alexd\CleanArquitectureALTA\src\EnterpriseBusinessRules\CleanArquitectureALTA.Entities\obj\Debug\net5.0\Alta.Entities.AssemblyInfoInputs.cache
+C:\Users\alexd\CleanArquitectureALTA\src\EnterpriseBusinessRules\CleanArquitectureALTA.Entities\obj\Debug\net5.0\Alta.Entities.AssemblyInfo.cs
+C:\Users\alexd\CleanArquitectureALTA\src\EnterpriseBusinessRules\CleanArquitectureALTA.Entities\obj\Debug\net5.0\Alta.Entities.csproj.CoreCompileInputs.cache
+C:\Users\alexd\CleanArquitectureALTA\src\EnterpriseBusinessRules\CleanArquitectureALTA.Entities\obj\Debug\net5.0\Alta.Entities.csproj.CopyComplete
+C:\Users\alexd\CleanArquitectureALTA\src\EnterpriseBusinessRules\CleanArquitectureALTA.Entities\obj\Debug\net5.0\Alta.Entities.dll
+C:\Users\alexd\CleanArquitectureALTA\src\EnterpriseBusinessRules\CleanArquitectureALTA.Entities\obj\Debug\net5.0\refint\Alta.Entities.dll
+C:\Users\alexd\CleanArquitectureALTA\src\EnterpriseBusinessRules\CleanArquitectureALTA.Entities\obj\Debug\net5.0\Alta.Entities.pdb
+C:\Users\alexd\CleanArquitectureALTA\src\EnterpriseBusinessRules\CleanArquitectureALTA.Entities\obj\Debug\net5.0\ref\Alta.Entities.dll

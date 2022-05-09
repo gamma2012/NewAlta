@@ -1,0 +1,12 @@
+C:\Users\alexd\CleanArquitectureALTA\Alta.Utils\bin\Debug\net5.0\Alta.Utils.deps.json
+C:\Users\alexd\CleanArquitectureALTA\Alta.Utils\bin\Debug\net5.0\Alta.Utils.dll
+C:\Users\alexd\CleanArquitectureALTA\Alta.Utils\bin\Debug\net5.0\Alta.Utils.pdb
+C:\Users\alexd\CleanArquitectureALTA\Alta.Utils\obj\Debug\net5.0\Alta.Utils.csproj.AssemblyReference.cache
+C:\Users\alexd\CleanArquitectureALTA\Alta.Utils\obj\Debug\net5.0\Alta.Utils.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\alexd\CleanArquitectureALTA\Alta.Utils\obj\Debug\net5.0\Alta.Utils.AssemblyInfoInputs.cache
+C:\Users\alexd\CleanArquitectureALTA\Alta.Utils\obj\Debug\net5.0\Alta.Utils.AssemblyInfo.cs
+C:\Users\alexd\CleanArquitectureALTA\Alta.Utils\obj\Debug\net5.0\Alta.Utils.csproj.CoreCompileInputs.cache
+C:\Users\alexd\CleanArquitectureALTA\Alta.Utils\obj\Debug\net5.0\Alta.Utils.dll
+C:\Users\alexd\CleanArquitectureALTA\Alta.Utils\obj\Debug\net5.0\refint\Alta.Utils.dll
+C:\Users\alexd\CleanArquitectureALTA\Alta.Utils\obj\Debug\net5.0\Alta.Utils.pdb
+C:\Users\alexd\CleanArquitectureALTA\Alta.Utils\obj\Debug\net5.0\ref\Alta.Utils.dll

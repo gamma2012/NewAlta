@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v5.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v5.0": {
+      "Alta.UseCasesPorts/1.0.0": {
+        "dependencies": {
+          "Alta.DTOs": "1.0.0"
+        },
+        "runtime": {
+          "Alta.UseCasesPorts.dll": {}
+        }
+      },
+      "Alta.DTOs/1.0.0": {
+        "runtime": {
+          "Alta.DTOs.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Alta.UseCasesPorts/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Alta.DTOs/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

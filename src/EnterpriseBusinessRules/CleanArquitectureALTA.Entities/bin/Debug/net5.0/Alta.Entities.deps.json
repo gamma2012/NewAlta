@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v5.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v5.0": {
+      "Alta.Entities/1.0.0": {
+        "dependencies": {
+          "Alta.DTOs": "1.0.0"
+        },
+        "runtime": {
+          "Alta.Entities.dll": {}
+        }
+      },
+      "Alta.DTOs/1.0.0": {
+        "runtime": {
+          "Alta.DTOs.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Alta.Entities/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Alta.DTOs/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

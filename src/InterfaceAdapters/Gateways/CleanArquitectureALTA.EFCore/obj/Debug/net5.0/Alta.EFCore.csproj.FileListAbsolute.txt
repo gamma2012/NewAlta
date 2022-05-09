@@ -1,0 +1,17 @@
+C:\Users\alexd\CleanArquitectureALTA\src\InterfaceAdapters\Gateways\CleanArquitectureALTA.EFCore\bin\Debug\net5.0\Alta.EFCore.deps.json
+C:\Users\alexd\CleanArquitectureALTA\src\InterfaceAdapters\Gateways\CleanArquitectureALTA.EFCore\bin\Debug\net5.0\Alta.EFCore.dll
+C:\Users\alexd\CleanArquitectureALTA\src\InterfaceAdapters\Gateways\CleanArquitectureALTA.EFCore\bin\Debug\net5.0\Alta.EFCore.pdb
+C:\Users\alexd\CleanArquitectureALTA\src\InterfaceAdapters\Gateways\CleanArquitectureALTA.EFCore\bin\Debug\net5.0\Alta.DTOs.dll
+C:\Users\alexd\CleanArquitectureALTA\src\InterfaceAdapters\Gateways\CleanArquitectureALTA.EFCore\bin\Debug\net5.0\Alta.Entities.dll
+C:\Users\alexd\CleanArquitectureALTA\src\InterfaceAdapters\Gateways\CleanArquitectureALTA.EFCore\bin\Debug\net5.0\Alta.Entities.pdb
+C:\Users\alexd\CleanArquitectureALTA\src\InterfaceAdapters\Gateways\CleanArquitectureALTA.EFCore\bin\Debug\net5.0\Alta.DTOs.pdb
+C:\Users\alexd\CleanArquitectureALTA\src\InterfaceAdapters\Gateways\CleanArquitectureALTA.EFCore\obj\Debug\net5.0\Alta.EFCore.csproj.AssemblyReference.cache
+C:\Users\alexd\CleanArquitectureALTA\src\InterfaceAdapters\Gateways\CleanArquitectureALTA.EFCore\obj\Debug\net5.0\Alta.EFCore.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\alexd\CleanArquitectureALTA\src\InterfaceAdapters\Gateways\CleanArquitectureALTA.EFCore\obj\Debug\net5.0\Alta.EFCore.AssemblyInfoInputs.cache
+C:\Users\alexd\CleanArquitectureALTA\src\InterfaceAdapters\Gateways\CleanArquitectureALTA.EFCore\obj\Debug\net5.0\Alta.EFCore.AssemblyInfo.cs
+C:\Users\alexd\CleanArquitectureALTA\src\InterfaceAdapters\Gateways\CleanArquitectureALTA.EFCore\obj\Debug\net5.0\Alta.EFCore.csproj.CoreCompileInputs.cache
+C:\Users\alexd\CleanArquitectureALTA\src\InterfaceAdapters\Gateways\CleanArquitectureALTA.EFCore\obj\Debug\net5.0\Alta.EFCore.csproj.CopyComplete
+C:\Users\alexd\CleanArquitectureALTA\src\InterfaceAdapters\Gateways\CleanArquitectureALTA.EFCore\obj\Debug\net5.0\Alta.EFCore.dll
+C:\Users\alexd\CleanArquitectureALTA\src\InterfaceAdapters\Gateways\CleanArquitectureALTA.EFCore\obj\Debug\net5.0\refint\Alta.EFCore.dll
+C:\Users\alexd\CleanArquitectureALTA\src\InterfaceAdapters\Gateways\CleanArquitectureALTA.EFCore\obj\Debug\net5.0\Alta.EFCore.pdb
+C:\Users\alexd\CleanArquitectureALTA\src\InterfaceAdapters\Gateways\CleanArquitectureALTA.EFCore\obj\Debug\net5.0\ref\Alta.EFCore.dll
