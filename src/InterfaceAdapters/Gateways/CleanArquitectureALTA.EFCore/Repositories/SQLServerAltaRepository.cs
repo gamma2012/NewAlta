@@ -29,7 +29,8 @@ namespace Alta.EFCore.Repostiories
 
         public Task InsertHeartbeatInitiateAsync(HeartBeatInitiateDTO dto)
         {
-            _context.Add(dto);
+            //_context.Add(dto);
+            throw new NotImplementedException();
         }
 
 
@@ -72,8 +73,9 @@ namespace Alta.EFCore.Repostiories
         public async Task<CreateLineInventory> SaveDataToPrimeAsync(CreateLineInventory createLineInventory)
         {
             //TODO: ADD LOGIC TO VALIDATE POCO INSTANCE HERE
-            await _context.CREATE_LINE_INVENTORY.AddAsync(createLineInventory);
-            return createLineInventory;
+            /*await _context.CREATE_LINE_INVENTORY.AddAsync(createLineInventory);
+            return createLineInventory;*/
+            throw new NotImplementedException();
         }
 
 
