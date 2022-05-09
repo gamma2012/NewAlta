@@ -16,9 +16,14 @@ namespace Alta.EFCore.Repositories
 
         public async Task<int> SaveChanges()
         {
-
-            this._context.SaveChanges
-
+            try
+            {
+                return await _context.SaveChangesAsync();
+            }
+            catch (Exception ex)
+            {
+                return -1;
+            }
         }
     }
 }

@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace Alta.EFCore
 {
-    internal class DependencyContainer
+    public static class DependencyContainer
     {
+
     }
 }

@@ -1,6 +1,7 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
 using Alta.Presenters;
 using Alta.UseCases;
+using Alta.PrimeClient;
 
 namespace Alta.IoC
 {
@@ -10,7 +11,7 @@ namespace Alta.IoC
         {
             services.AddUseCasesServices();
             services.AddPresenters();
-
+            services.AddPrimeClientServices();
             return services;
         }
     }

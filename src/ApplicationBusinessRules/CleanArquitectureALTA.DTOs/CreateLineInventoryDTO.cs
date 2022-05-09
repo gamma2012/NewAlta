@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace Alta.DTOs
 {
-    public class CreateLineInventoryDTO
+    public class HeartbeatDTO : DtoBase
     {
         [JsonPropertyName("CREATE_LINE_INVENTORY_IN_IFD")]
         public CREATELINEINVENTORYINIFD CREATE_LINE_INVENTORY_IN_IFD { get; set; }

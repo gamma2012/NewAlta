@@ -11,6 +11,7 @@ namespace Alta.EFCore.DataContext
     {
         public AltaContext(DbContextOptions<AltaContext> options) : base(options)
         {
+
         }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
