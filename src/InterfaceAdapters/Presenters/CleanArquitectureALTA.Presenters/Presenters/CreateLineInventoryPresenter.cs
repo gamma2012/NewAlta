@@ -11,11 +11,11 @@ using System.Threading.Tasks;
 
 namespace Alta.Presenters.Presenters
 {
-    public class CreateLineInventoryPresenter : IHeartbeatOutputPort, IPresenter<TransactionResult>
+    public class CreateLineInventoryPresenter : ICreateLineInventoryOutputPort, IPresenter<TransactionResult>
     {
         public TransactionResult Content { get; private set; }
 
-        public async Task Handle(HeartbeatDTO createLineInventoryDTO)
+        public async Task Handle(CreateLineInventoryDTO createLineInventoryDTO)
         {
             /*Content.MESSAGE = createLineInventoryDTO.;
             Content.DATA = 

@@ -1,14 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
-using Alta.DTOs;
 using Alta.EFCore.DataContext;
 using Alta.Entities.Interfaces;
 using Alta.Entities.POCOs;
 
-
-
-namespace Alta.EFCore.Repostiories
+namespace Alta.EFCore.Repositories
 {
     public class SQLServerAltaRepository : IAltaRepository
     {

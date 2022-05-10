@@ -1,44 +1,46 @@
-﻿using Alta.DTOs;
+﻿using System;
+using System.Net;
+using System.Threading.Tasks;
+using Alta.DTOs;
 using Alta.DTOs.HttpDTOs;
 using Alta.Entities.Interfaces;
 using Alta.Entities.POCOs;
+using Alta.PrimeClient;
 using Alta.UseCasesPorts.Interfaces;
 using Alta.Utils;
 using AutoMapper;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using Microsoft.Extensions.Options;
 
-namespace Alta.UseCases.Interactor
+namespace Alta.UseCases.Interactors
 {
     public class HeartBeatInitiateInteractor : IHeartBeatInitiateInputPort
     {
         private readonly IHeartBeatInitiateOutputPort _heartbeatOutputPort;
         private readonly ILoggingRepository _loggingRepository;
         private readonly IAltaRepository _altaRepository;
+        private readonly IUnitOfWork _unitOfWork;
         private readonly IPrimeClient _primeClient;
         private readonly IMapper _mapper;
+        private readonly PrimeWsOptions _primeWsOptions;
 
-        public HeartBeatInitiateInteractor(IHeartBeatInitiateOutputPort heartbeatOutputPort, ILoggingRepository loggingRepository, IAltaRepository altaRepository, IPrimeClient primeClient, IMapper mapper)
-        {
-            _loggingRepository = loggingRepository;
-            _altaRepository = altaRepository;
-            _heartbeatOutputPort = heartbeatOutputPort;
-            _primeClient = primeClient;
-            _mapper = mapper;
-        }
+        public HeartBeatInitiateInteractor(IHeartBeatInitiateOutputPort heartbeatOutputPort,
+            ILoggingRepository loggingRepository, IAltaRepository altaRepository, IPrimeClient primeClient,
+            IMapper mapper, IUnitOfWork unitOfWork, IOptions<PrimeWsOptions> options)
+            =>
+                (_heartbeatOutputPort, _loggingRepository, _altaRepository, _primeClient, _mapper, _unitOfWork, _primeWsOptions)
+                = (heartbeatOutputPort, loggingRepository, altaRepository, primeClient, mapper, unitOfWork, options.Value);
+
 
         public async Task Handle(HeartBeatInitiateDTO heartBeatInitiateDTO)
         {
             //TODO: add maping from DTO to log
-
-            await _altaRepository.InsertHeartbeatInitiateAsync(_mapper.Map<HeartbeatInitiate>(heartBeatInitiateDTO));
-
-            string uri = "https://www.mockachino.com/30736d33-ce94-49/HEARTBEAT_INITIATE";
+            string uri = _primeWsOptions.Endpoints["HeartBeatInitiate"];
             await _loggingRepository.InsertLogAsync(new Log());
             TransactionResult result = await _primeClient.SendMessage(uri, heartBeatInitiateDTO);
+            
+            await _altaRepository.InsertHeartbeatInitiateAsync(_mapper.Map<HeartbeatInitiate>(heartBeatInitiateDTO));
+            await _unitOfWork.SaveChanges();
+
             Console.WriteLine("result: " + result.ToJson());
             await Task.CompletedTask;
         }

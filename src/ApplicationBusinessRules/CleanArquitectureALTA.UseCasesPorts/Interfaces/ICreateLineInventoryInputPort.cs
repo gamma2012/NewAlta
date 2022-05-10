@@ -9,6 +9,6 @@ namespace Alta.UseCasesPorts.Interfaces
 {
     public interface ICreateLineInventoryInputPort
     {
-        Task Handle(HeartbeatDTO createLineInventoryDTO);
+        Task Handle(CreateLineInventoryDTO createLineInventoryDTO);
     }
 }

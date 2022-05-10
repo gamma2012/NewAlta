@@ -13,7 +13,7 @@ namespace Alta.IoC
         {
             services.AddUseCasesServices();
             services.AddPresenters();
-            services.AddPrimeClientServices();
+            services.AddPrimeClientServices(configuration);
             services.AddEF(configuration);
             return services;
         }

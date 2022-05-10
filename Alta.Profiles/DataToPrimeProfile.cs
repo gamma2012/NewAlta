@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace Alta.Profiles
 {
-    public class DataToPrimeProfile : Profile
+    public class DataToPrimeProfile : ProfileBase
     {
         public DataToPrimeProfile()
         {

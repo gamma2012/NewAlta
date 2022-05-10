@@ -1,13 +1,16 @@
-version: "3.8"
+version: "3.0"
 
 services:
-  mongo:
-    image: mongo
-    container_name: mongo_db
-    ports:
-      - 27017:27017
+  sqlserver:
+    image: mcr.microsoft.com/mssql/server:2019-latest
     volumes:
-      - mongodbdata:/data/mongo_db
+      - clean-alta:/var/opt/mssql
+    container_name: ALTACleanDB
+    ports:
+      - 1433:1433
+    environment:
+      - ACCEPT_EULA=Y
+      - SA_PASSWORD=Passw0rd
 
 
   rabbitmq:
@@ -17,9 +20,10 @@ services:
       - 5672:5672
       - 15672:15672
     volumes:
-      - rabbitmqdata:/var/lib/rabbitmq
+      - rabbitmq-data:/var/lib/rabbitmq
     hostname: rabbitmq_storage
 
-  volumes:
-    mongodbdata:
-    rabbitmqdata:
+volumes:
+  clean-alta:
+#    driver: local
+  rabbitmq-data:

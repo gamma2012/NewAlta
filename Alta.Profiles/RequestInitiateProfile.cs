@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace Alta.Profiles
 {
-    public class RequestInitiateProfile : Profile
+    public class RequestInitiateProfile : ProfileBase
     {
         public RequestInitiateProfile()
         {
