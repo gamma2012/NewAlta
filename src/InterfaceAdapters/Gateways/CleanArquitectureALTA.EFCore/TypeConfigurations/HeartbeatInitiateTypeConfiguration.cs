@@ -22,8 +22,6 @@ namespace Alta.EFCore.TypeConfigurations
             builder.Property(x => x.Text).HasColumnType("varchar(50)");
             builder.Property(x => x.MessageReceived).HasColumnType("varchar(MAX)");
             builder.Property(x => x.CreationDatetime).HasDefaultValueSql("getdate()").IsRequired(true);
-
-
         }
     }
 }

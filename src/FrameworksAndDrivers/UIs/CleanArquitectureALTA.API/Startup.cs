@@ -13,7 +13,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace CleanArquitectureALTA.API
+namespace ALTA.API
 {
     public class Startup
     {

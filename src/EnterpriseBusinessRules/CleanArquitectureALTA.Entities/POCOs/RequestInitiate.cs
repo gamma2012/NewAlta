@@ -13,11 +13,11 @@ namespace Alta.Entities.POCOs
         public string RequestContentsFlag { get; set; } // (varchar(50), null)
         public string RequestStolocFlag { get; set; } // (varchar(50), null)
         public string MessageSent { get; set; } // (varchar(MAX), null)
-        public DateTime ResponseTimestamp { get; set; } // (datetime, null)
+        public DateTime ResponseDatetime { get; set; } // (datetime, null)
         public string MessageReceived { get; set; } // (varchar(MAX), null)
         public bool HasConcluded { get; set; } // (bit, null) | CONSTRAINT: default value = 0
-        public DateTime CreationTimestamp { get; set; } // (datetime, null) | CONSTRAINT: default value = getdate()
-        public bool Appointed { get; set; } // (bit, null)
+        public DateTime CreationDatetime { get; set; } // (datetime, null) | CONSTRAINT: default value = getdate()
+        public bool Noted { get; set; } // (bit, null) --referencia a registro en prime (Apuntamiento)
         public string Line { get; set; } // (varchar(100), null)
 
     }

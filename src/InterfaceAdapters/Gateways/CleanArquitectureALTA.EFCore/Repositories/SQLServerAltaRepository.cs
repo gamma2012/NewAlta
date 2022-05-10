@@ -18,8 +18,6 @@ namespace Alta.EFCore.Repostiories
             _context = context;
         }
 
-
-
         public Task<IEnumerable<RequestInbox>> CheckReprocessAsync()
         {
             throw new NotImplementedException();
@@ -29,7 +27,8 @@ namespace Alta.EFCore.Repostiories
 
         public Task InsertHeartbeatInitiateAsync(HeartBeatInitiateDTO dto)
         {
-            //_context.Add(dto);
+            //este este
+            //return _context.Add(dto);
             throw new NotImplementedException();
         }
 
@@ -37,6 +36,7 @@ namespace Alta.EFCore.Repostiories
 
         public Task InsertLogAsync()
         {
+            //probablemente el mas importante
             throw new NotImplementedException();
         }
 
@@ -44,6 +44,7 @@ namespace Alta.EFCore.Repostiories
 
         public Task InsertRequestInitiateAsync()
         {
+            //este
             throw new NotImplementedException();
         }
 
@@ -65,6 +66,7 @@ namespace Alta.EFCore.Repostiories
 
         public Task SaveDataToPrimeAsync()
         {
+            //dudoso
             throw new NotImplementedException();
         }
 

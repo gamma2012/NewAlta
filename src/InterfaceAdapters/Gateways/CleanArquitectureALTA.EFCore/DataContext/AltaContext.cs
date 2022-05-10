@@ -1,4 +1,6 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using Alta.EFCore.TypeConfigurations;
+using Alta.Entities.POCOs;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -18,5 +20,8 @@ namespace Alta.EFCore.DataContext
         {
             modelBuilder.ApplyConfigurationsFromAssembly(typeof(AltaContext).Assembly);
         }
+
+        public DbSet<RequestInitiate> RequestInitiates { get; set; }
+        public DbSet<HeartbeatInitiate> HeartbeatInitiates { get; set; }
     }
 }
