@@ -15,7 +15,9 @@ namespace Alta.UseCases
         {
             services.AddTransient<ICreateLineInventoryInputPort, CreateLineInventoryInteractor>();
             services.AddTransient<IHeartBeatInitiateInputPort, HeartBeatInitiateInteractor>();
-
+            services.AddTransient<IMovementConfirmInputPort, MovementConfirmInteractor>();
+            services.AddTransient<IRequestInitiateInputPort, RequestInitiateInteractor>();
+            
             return services;
         }
     }

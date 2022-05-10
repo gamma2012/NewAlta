@@ -12,25 +12,25 @@ using System.Threading.Tasks;
 
 namespace Alta.UseCases.Interactor
 {
-    public class HeartBeatInitiateInteractor : IHeartBeatInitiateInputPort
+    public class RequestInitiateInteractor : IRequestInitiateInputPort
     {
-        private readonly IHeartBeatInitiateOutputPort _heartbeatOutputPort;
+        private readonly IRequestInitiateOutputPort _requestinitiateoutputport;
         private readonly ILoggingRepository _loggingRepository;
         private readonly IPrimeClient _primeClient;
 
-        public HeartBeatInitiateInteractor(IHeartBeatInitiateOutputPort heartbeatOutputPort, ILoggingRepository loggingRepository, IPrimeClient primeClient)
+        public RequestInitiateInteractor(IRequestInitiateOutputPort requestinitiateoutputport, ILoggingRepository loggingRepository, IPrimeClient primeClient)
         {
             _loggingRepository = loggingRepository;
-            _heartbeatOutputPort = heartbeatOutputPort;
+            _requestinitiateoutputport = requestinitiateoutputport;
             _primeClient = primeClient;
         }
 
-        public async Task Handle(HeartBeatInitiateDTO heartBeatInitiateDTO)
+        public async Task Handle(RequestInitiateDTO requestInitiateDTO)
         {
             //TODO: add maping from DTO to log
-            string uri = "https://www.mockachino.com/30736d33-ce94-49/HEARTBEAT_INITIATE";
+            string uri = "https://www.mockachino.com/30736d33-ce94-49/REQUEST_INITIATE";
             await _loggingRepository.InsertLogAsync(new Log());
-            TransactionResult result = await _primeClient.SendMessage(uri, heartBeatInitiateDTO);
+            TransactionResult result = await _primeClient.SendMessage(uri, requestInitiateDTO);
             Console.WriteLine("result: " + result.ToJson());
             await Task.CompletedTask;
         }

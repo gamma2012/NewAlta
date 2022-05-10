@@ -25,15 +25,13 @@ namespace Alta.Controllers.AltaWS
 
         //TODO validate header filter
         [HttpPost("CREATE_LINE_INVENTORY_IN_IFD")]
-        public async Task<IActionResult> CreateLineInventoryInIFD(CreateLineInventoryDTO data)
+        public async Task<IActionResult> CreateLineInventoryInIFD(HeartbeatDTO data)
         {
             TransactionResult result = new TransactionResult();
             
             try
             {
                 await this._createLineInventoryInputPort.Handle(data);
-
-
             }catch(Exception ex)
             {
                 //TODO exception filter
