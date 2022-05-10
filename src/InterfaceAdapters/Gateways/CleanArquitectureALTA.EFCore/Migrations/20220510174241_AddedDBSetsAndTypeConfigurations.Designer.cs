@@ -4,14 +4,16 @@ using Alta.EFCore.DataContext;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace Alta.EFCore.Migrations
 {
     [DbContext(typeof(AltaContext))]
-    partial class AltaContextModelSnapshot : ModelSnapshot
+    [Migration("20220510174241_AddedDBSetsAndTypeConfigurations")]
+    partial class AddedDBSetsAndTypeConfigurations
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -46,35 +48,6 @@ namespace Alta.EFCore.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("DataFromPrime");
-                });
-
-            modelBuilder.Entity("Alta.Entities.POCOs.DataToPrime", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int")
-                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
-
-                    b.Property<string>("Application")
-                        .HasColumnType("varchar(50)");
-
-                    b.Property<string>("Data")
-                        .HasColumnType("varchar(MAX)");
-
-                    b.Property<DateTime>("Date")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("datetime2")
-                        .HasDefaultValueSql("getdate()");
-
-                    b.Property<string>("Endpoint")
-                        .HasColumnType("varchar(50)");
-
-                    b.Property<string>("TranId")
-                        .HasColumnType("varchar(25)");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("DataToPrime");
                 });
 
             modelBuilder.Entity("Alta.Entities.POCOs.HeartbeatInitiate", b =>

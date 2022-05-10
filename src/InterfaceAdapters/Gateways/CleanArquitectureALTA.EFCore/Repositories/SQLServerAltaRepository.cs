@@ -23,16 +23,12 @@ namespace Alta.EFCore.Repostiories
             throw new NotImplementedException();
         }
 
-
-
-        public Task InsertHeartbeatInitiateAsync(HeartBeatInitiateDTO dto)
+        //DONE
+        public async Task<HeartbeatInitiate> InsertHeartbeatInitiateAsync(HeartbeatInitiate heartbeatInitiate)
         {
-            //este este
-            //return _context.Add(dto);
-            throw new NotImplementedException();
+            await _context.HeartbeatInitiate.AddAsync(heartbeatInitiate);
+            return heartbeatInitiate;
         }
-
-
 
         public Task InsertLogAsync()
         {

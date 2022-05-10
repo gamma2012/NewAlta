@@ -2,9 +2,8 @@
 
 namespace Alta.Entities.POCOs
 {
-    public class RequestInitiate // REQUEST_INITIATE - constraint en concluded y creation_time
+    public class RequestInitiate : Entity // REQUEST_INITIATE - constraint en concluded y creation_time
     {
-        public int Id { get; set; } // (int, not null)
         public string TranId { get; set; } // (varchar(50), null)
         public string TranDT { get; set; } // (varchar(50), null)
         public string WHId { get; set; } // (varchar(50), null)

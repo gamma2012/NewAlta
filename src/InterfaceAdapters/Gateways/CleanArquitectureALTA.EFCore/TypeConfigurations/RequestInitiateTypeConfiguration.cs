@@ -13,6 +13,8 @@ namespace Alta.EFCore.TypeConfigurations
     {
         public void Configure(EntityTypeBuilder<RequestInitiate> builder)
         {
+            builder.ToTable("RequestInitiate");
+
             builder.HasKey(x => x.Id);
             builder.Property(x => x.Id).ValueGeneratedOnAdd();
             builder.Property(x => x.TranId).HasColumnType("varchar(25)");

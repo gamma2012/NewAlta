@@ -13,6 +13,8 @@ namespace Alta.EFCore.TypeConfigurations
     {
         public void Configure(EntityTypeBuilder<HeartbeatInitiate> builder)
         {
+            builder.ToTable("HeartbeatInitiate");
+
             builder.HasKey(x => x.Id);
             builder.Property(x => x.Id).ValueGeneratedOnAdd();
             builder.Property(x => x.TranId).HasColumnType("varchar(25)");

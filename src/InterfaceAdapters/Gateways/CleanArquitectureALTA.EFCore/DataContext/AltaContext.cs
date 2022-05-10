@@ -21,7 +21,9 @@ namespace Alta.EFCore.DataContext
             modelBuilder.ApplyConfigurationsFromAssembly(typeof(AltaContext).Assembly);
         }
 
-        public DbSet<RequestInitiate> RequestInitiates { get; set; }
-        public DbSet<HeartbeatInitiate> HeartbeatInitiates { get; set; }
+        public DbSet<RequestInitiate> RequestInitiate { get; set; }
+        public DbSet<HeartbeatInitiate> HeartbeatInitiate { get; set; }
+        public DbSet<DataFromPrime> DataFromPrime { get; set; }
+        public DbSet<DataToPrime> DataToPrime { get; set; }
     }
 }

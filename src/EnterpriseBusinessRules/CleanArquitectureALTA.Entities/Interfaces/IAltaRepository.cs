@@ -19,7 +19,7 @@ namespace Alta.Entities.Interfaces
         public Task SetLoadDetailAsync();
         public Task SetLoadErrorlAsync();
         public Task InsertRequestInitiateAsync();
-        public Task InsertHeartbeatInitiateAsync(HeartBeatInitiateDTO dto);
+        public Task<HeartbeatInitiate> InsertHeartbeatInitiateAsync(HeartbeatInitiate heartbeatInitiate);
         public Task<IEnumerable<RequestInbox>> CheckReprocessAsync();
         public Task InsertRequestToReprocessAsync();
     }

@@ -4,7 +4,6 @@ namespace Alta.Entities.POCOs
 {
     public class HeartbeatInitiate : Entity // HEARTBEAT_INITIATE - constraint en creation_time
     {
-       
         public string TranId { get; set; } // (varchar(50), null)
         public string TranDT { get; set; } // (varchar(50), null)
         public string WHId { get; set; } // (varchar(50), null)
