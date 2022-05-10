@@ -9,9 +9,10 @@ namespace Alta.Presenters
     {
         public static IServiceCollection AddPresenters(this IServiceCollection services)
         {
-            services.AddScoped<ICreateLineInventoryOutputPort, CreateLineInventoryPresenter>();
+            services.AddScoped<IHeartbeatOutputPort, CreateLineInventoryPresenter>();
             services.AddScoped<IHeartBeatInitiateOutputPort, HeartBeatInitiatePresenter>();
-
+            services.AddScoped<IMovementConfirmOutputPort, MovementConfirmPresenter>();
+            services.AddScoped<IRequestInitiateOutputPort, RequestInitiatePresenter>();
             return services;
         }
     }

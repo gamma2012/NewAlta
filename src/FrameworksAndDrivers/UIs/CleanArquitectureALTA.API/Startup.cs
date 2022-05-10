@@ -34,7 +34,7 @@ namespace CleanArquitectureALTA.API
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "CleanArquitectureALTA.API", Version = "v1" });
             });
 
-            services.AddAltaDependencies();
+            services.AddAltaDependencies(Configuration);
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

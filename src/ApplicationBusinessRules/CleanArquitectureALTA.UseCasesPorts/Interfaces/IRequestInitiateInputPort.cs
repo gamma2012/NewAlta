@@ -7,8 +7,8 @@ using System.Threading.Tasks;
 
 namespace Alta.UseCasesPorts.Interfaces
 {
-    public interface IHeartbeatOutputPort
+    public interface IRequestInitiateInputPort
     {
-        Task Handle(HeartbeatDTO createLineInventoryDTO);
+        Task Handle(RequestInitiateDTO requestInitiateDTO);
     }
 }

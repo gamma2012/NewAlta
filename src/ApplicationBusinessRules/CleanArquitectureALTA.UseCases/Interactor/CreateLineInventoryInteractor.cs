@@ -1,5 +1,10 @@
 ﻿using Alta.DTOs;
+using Alta.DTOs.HttpDTOs;
+using Alta.Entities.Interfaces;
+using Alta.Entities.POCOs;
+using Alta.PrimeClient;
 using Alta.UseCasesPorts.Interfaces;
+using Alta.Utils;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,15 +16,24 @@ namespace Alta.UseCases.Interactor
     public class CreateLineInventoryInteractor : ICreateLineInventoryInputPort
     {
 
-        private readonly ICreateLineInventoryOutputPort _createLineInventoryOutputPort;
+        private readonly IHeartbeatOutputPort _createLineInventoryOutputPort;
+        private readonly ILoggingRepository _loggingRepository;
+        private readonly IPrimeClient _primeClient;
 
-        public CreateLineInventoryInteractor(ICreateLineInventoryOutputPort createLineInventoryOutputPort) 
+        public CreateLineInventoryInteractor(IHeartbeatOutputPort createLineInventoryOutputPort, ILoggingRepository loggingRepository, IPrimeClient primeClient) 
         {
+            _loggingRepository = loggingRepository;
             _createLineInventoryOutputPort = createLineInventoryOutputPort;
+            _primeClient = primeClient;
         }
-        public async Task Handle(CreateLineInventoryDTO createLineInventoryDTO)
+
+        public async Task Handle(HeartbeatDTO createLineInventoryDTO)
         {
-            Console.WriteLine($"---> Completed Task: {createLineInventoryDTO.CREATE_LINE_INVENTORY_IN_IFD.CTRL_SEG.TRANID}");
+            //TODO: add maping from DTO to log
+            string uri = "https://www.mockachino.com/30736d33-ce94-49/CREATE_LINE_INVENTORY_IN_IFD";
+            await _loggingRepository.InsertLogAsync(new Log());
+            TransactionResult result  = await _primeClient.SendMessage(uri,createLineInventoryDTO);
+            Console.WriteLine("result: "+ result.ToJson());
             await Task.CompletedTask;
         }
     }
