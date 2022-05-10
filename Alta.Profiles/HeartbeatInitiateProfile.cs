@@ -15,7 +15,11 @@ namespace Alta.Profiles
         {
             CreateMap<HeartbeatInitiate, HeartBeatInitiateDTO>()
                .ReverseMap()
-               .ForPath(poco => poco.TRANID, opts => opts.MapFrom(dto => dto.CREATE_LINE_INVENTORY_IN_IFD.CTRL_SEG.TRANID))
+               .ForPath(poco => poco.TranId, opts => opts.MapFrom(dto => dto.HEARTBEATINITIATE.CTRLSEG.TRANID))
+               .ForPath(poco => poco.TranDT, opts => opts.MapFrom(dto => dto.HEARTBEATINITIATE.CTRLSEG.TRANDT))
+               .ForPath(poco => poco.WHId, opts => opts.MapFrom(dto => dto.HEARTBEATINITIATE.CTRLSEG.WH_ID))
+               .ForPath(poco => poco.WCSId, opts => opts.MapFrom(dto => dto.HEARTBEATINITIATE.CTRLSEG.WCS_ID))
+               .ForPath(poco => poco.Text, opts => opts.MapFrom(dto => dto.HEARTBEATINITIATE.HEARTBEATSEG.TEXT));
         }
     }
 }

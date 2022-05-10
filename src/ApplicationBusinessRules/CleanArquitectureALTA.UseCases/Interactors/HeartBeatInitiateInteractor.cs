@@ -34,6 +34,7 @@ namespace Alta.UseCases.Interactor
         {
             //TODO: add maping from DTO to log
 
+            await _altaRepository.InsertHeartbeatInitiateAsync(_mapper.Map<HeartbeatInitiate>(heartBeatInitiateDTO));
 
             string uri = "https://www.mockachino.com/30736d33-ce94-49/HEARTBEAT_INITIATE";
             await _loggingRepository.InsertLogAsync(new Log());
