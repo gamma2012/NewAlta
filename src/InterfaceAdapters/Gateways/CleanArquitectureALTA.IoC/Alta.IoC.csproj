@@ -9,6 +9,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\..\..\..\Alta.Authentication\Alta.Authentication.csproj" />
     <ProjectReference Include="..\..\..\ApplicationBusinessRules\CleanArquitectureALTA.UseCases\Alta.UseCases.csproj" />
     <ProjectReference Include="..\..\Presenters\CleanArquitectureALTA.Presenters\Alta.Presenters.csproj" />
   </ItemGroup>

@@ -34,7 +34,7 @@ namespace ALTA.API
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "CleanArquitectureALTA.API", Version = "v1" });
             });
-
+            
             services.AddAltaDependencies(Configuration);
         }
 

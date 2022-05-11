@@ -3,6 +3,7 @@ using Alta.Presenters;
 using Alta.UseCases;
 using Alta.PrimeClient;
 using Alta.EFCore;
+using Alta.Authentication;
 using Microsoft.Extensions.Configuration;
 
 namespace Alta.IoC
@@ -14,6 +15,7 @@ namespace Alta.IoC
             services.AddUseCasesServices();
             services.AddPresenters();
             services.AddPrimeClientServices(configuration);
+            services.AddCookieAuthentication();
             services.AddEF(configuration);
             return services;
         }

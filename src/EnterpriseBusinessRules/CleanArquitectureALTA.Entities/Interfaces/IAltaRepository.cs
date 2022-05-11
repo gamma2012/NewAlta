@@ -22,5 +22,6 @@ namespace Alta.Entities.Interfaces
         public Task<HeartbeatInitiate> InsertHeartbeatInitiateAsync(HeartbeatInitiate heartbeatInitiate);
         public Task<IEnumerable<RequestInbox>> CheckReprocessAsync();
         public Task InsertRequestToReprocessAsync();
+        
     }
 }

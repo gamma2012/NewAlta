@@ -25,5 +25,7 @@ namespace Alta.EFCore.DataContext
         public DbSet<HeartbeatInitiate> HeartbeatInitiate { get; set; }
         public DbSet<DataFromPrime> DataFromPrime { get; set; }
         public DbSet<DataToPrime> DataToPrime { get; set; }
+        public DbSet<User> User { get; set; }
+
     }
 }

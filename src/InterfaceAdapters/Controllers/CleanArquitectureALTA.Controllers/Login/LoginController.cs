@@ -1,4 +1,5 @@
 ﻿using Alta.DTOs;
+using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using System.Threading.Tasks;
@@ -22,7 +23,10 @@ namespace Alta.Controllers.Login
 
         public async Task<IActionResult> LoginByUsernameAndPassword(string username, string password)
         {
-            return null;
+            await HttpContext.SignInAsync(userPrincipal);
+
+            return Ok();
+           
         }
 
         [Authorize]
