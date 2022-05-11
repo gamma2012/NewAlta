@@ -16,18 +16,32 @@ namespace Alta.Controllers.Login
     {
 
         private readonly ILoginOutputPort _loginOutputPort;
+        private readonly ILoginInputPort _loginInputPort;
 
-        public LoginController(ILoginOutputPort loginOutputPort)
+        public LoginController(ILoginOutputPort loginOutputPort, ILoginInputPort loginInputPort)
         {
             _loginOutputPort = loginOutputPort;
+            _loginInputPort = loginInputPort;
         }
 
 
-
+        /// <summary>
+        /// HTTP POST method using for user authentication
+        /// </summary>
+        /// <param name="user"></param>
+        /// <returns></returns>
         [HttpPost]
         public async Task<IActionResult> Login([FromBody]UserDTO user)
         {
-            return null;
+            //Handle user and check if it exists and credentials are correct.
+            await _loginInputPort.Handle(user);
+            LoginPresenter presenter = ((LoginPresenter)_loginOutputPort);
+
+            //if non-valid return Unauthorized.
+            if(!presenter.UserExistance) return Unauthorized();
+
+            await HttpContext.SignInAsync(presenter.Content);
+            return Ok();
         }
 
 
@@ -37,10 +51,7 @@ namespace Alta.Controllers.Login
 
         public async Task<IActionResult> LoginByUsernameAndPassword(string username, string password)
         {
-            await HttpContext.SignInAsync(((IPresenter<ClaimsPrincipal>)_loginOutputPort).Content);
-
-            return Ok();
-           
+            return null;
         }
 
         [Authorize]
@@ -48,7 +59,7 @@ namespace Alta.Controllers.Login
 
         public async Task<IActionResult> CheckLogin()
         {
-            return null;
+            return Ok();
         }
     }
 }

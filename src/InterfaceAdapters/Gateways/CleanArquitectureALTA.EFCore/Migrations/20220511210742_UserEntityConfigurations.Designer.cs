@@ -4,14 +4,16 @@ using Alta.EFCore.DataContext;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace Alta.EFCore.Migrations
 {
     [DbContext(typeof(AltaContext))]
-    partial class AltaContextModelSnapshot : ModelSnapshot
+    [Migration("20220511210742_UserEntityConfigurations")]
+    partial class UserEntityConfigurations
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

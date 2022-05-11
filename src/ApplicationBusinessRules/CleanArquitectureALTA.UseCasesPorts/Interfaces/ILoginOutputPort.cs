@@ -5,6 +5,6 @@ namespace Alta.UseCasesPorts.Interfaces
 {
     public interface ILoginOutputPort
     {
-        Task Handle(UserDTO user);
+        Task Handle(UserDTO user, bool userExists);
     }
 }

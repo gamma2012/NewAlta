@@ -23,11 +23,9 @@ namespace Alta.UseCases.Interactors
         public async Task Handle(UserDTO user)
         {
            bool exists = await _loginRepository.ExistsUserAsync(user.username, user.password);
-           if (exists)
-            {
-               
-                _loginOutputPort.Handle(user);
-            }
+           
+           //returns user dto and if it exists
+           await _loginOutputPort.Handle(user, exists);
         }
         
 

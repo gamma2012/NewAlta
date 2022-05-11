@@ -12,10 +12,13 @@ namespace Alta.Presenters.Presenters
 {
     public class LoginPresenter : ILoginOutputPort, IPresenter<ClaimsPrincipal>
     {
-        public ClaimsPrincipal Content { get; private set; }
+        public ClaimsPrincipal? Content { get; private set; }
+        public bool UserExistance { get; private set; }
 
-        public async Task Handle(UserDTO user)
+        public async Task Handle(UserDTO user, bool userExistance)
         {
+            UserExistance = userExistance;
+
             var userClaims = new List<Claim>(){
                     new Claim(ClaimTypes.Name, user.username)
                 };
