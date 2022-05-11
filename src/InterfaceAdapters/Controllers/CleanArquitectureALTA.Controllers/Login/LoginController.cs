@@ -1,7 +1,11 @@
 ﻿using Alta.DTOs;
+using Alta.Presenters.Interfaces;
+using Alta.Presenters.Presenters;
+using Alta.UseCasesPorts.Interfaces;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using System.Security.Claims;
 using System.Threading.Tasks;
 
 namespace Alta.Controllers.Login
@@ -10,6 +14,16 @@ namespace Alta.Controllers.Login
     [ApiController]
     public class LoginController : ControllerBase
     {
+
+        private readonly ILoginOutputPort _loginOutputPort;
+
+        public LoginController(ILoginOutputPort loginOutputPort)
+        {
+            _loginOutputPort = loginOutputPort;
+        }
+
+
+
         [HttpPost]
         public async Task<IActionResult> Login([FromBody]UserDTO user)
         {
@@ -23,7 +37,7 @@ namespace Alta.Controllers.Login
 
         public async Task<IActionResult> LoginByUsernameAndPassword(string username, string password)
         {
-            await HttpContext.SignInAsync(userPrincipal);
+            await HttpContext.SignInAsync(((IPresenter<ClaimsPrincipal>)_loginOutputPort).Content);
 
             return Ok();
            

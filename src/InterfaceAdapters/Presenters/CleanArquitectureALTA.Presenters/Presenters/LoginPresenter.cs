@@ -4,18 +4,26 @@ using Alta.UseCasesPorts.Interfaces;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Claims;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace Alta.Presenters.Presenters
 {
-    public class LoginPresenter : ILoginOutputPort, IPresenter<UserDTO>
+    public class LoginPresenter : ILoginOutputPort, IPresenter<ClaimsPrincipal>
     {
-        public UserDTO Content { get; private set; }
+        public ClaimsPrincipal Content { get; private set; }
 
         public async Task Handle(UserDTO user)
         {
-            Content = user;
+            var userClaims = new List<Claim>(){
+                    new Claim(ClaimTypes.Name, user.username)
+                };
+
+            var grandmaIdentity = new ClaimsIdentity(userClaims, "User Identity");
+
+            Content = new ClaimsPrincipal(new[] { grandmaIdentity });
+
             await Task.CompletedTask;
         }
     }

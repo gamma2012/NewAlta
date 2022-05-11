@@ -25,14 +25,8 @@ namespace Alta.UseCases.Interactors
            bool exists = await _loginRepository.ExistsUserAsync(user.username, user.password);
            if (exists)
             {
-                var userClaims = new List<Claim>(){
-                    new Claim(ClaimTypes.Name, user.username)
-                };
-
-                var grandmaIdentity = new ClaimsIdentity(userClaims, "User Identity");
-
-                var userPrincipal = new ClaimsPrincipal(new[] { grandmaIdentity });
-                _loginOutputPort.Handle(userPrincipal);
+               
+                _loginOutputPort.Handle(user);
             }
         }
         
