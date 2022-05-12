@@ -31,9 +31,4 @@ namespace Alta.DTOs
         [JsonPropertyName("CTRL_SEG")]
         public CTRLSEGMovementConfirm CTRLSEG { get; set; }
     }
-
-    
-
-
-
 }

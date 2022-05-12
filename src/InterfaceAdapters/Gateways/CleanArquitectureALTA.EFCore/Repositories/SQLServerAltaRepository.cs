@@ -4,6 +4,8 @@ using System.Threading.Tasks;
 using Alta.EFCore.DataContext;
 using Alta.Entities.Interfaces;
 using Alta.Entities.POCOs;
+using Alta.Utils;
+using Microsoft.EntityFrameworkCore;
 
 namespace Alta.EFCore.Repositories
 {
@@ -32,39 +34,28 @@ namespace Alta.EFCore.Repositories
             //probablemente el mas importante
             throw new NotImplementedException();
         }
-
-
-
-        public Task InsertRequestInitiateAsync()
+        
+        public async Task InsertRequestInitiateAsync(RequestInitiate requestInitiate)
         {
-            //este
-            throw new NotImplementedException();
+            await _context.AddAsync(requestInitiate);
         }
-
-
-
+        
         public Task InsertRequestToReprocessAsync()
         {
             throw new NotImplementedException();
         }
-
-
-
+        
         public Task SaveDataFromPrimeAsync()
         {
             throw new NotImplementedException();
         }
-
-
-
+        
         public Task SaveDataToPrimeAsync()
         {
             //dudoso
             throw new NotImplementedException();
         }
-
-
-
+        
         public async Task<CreateLineInventory> SaveDataToPrimeAsync(CreateLineInventory createLineInventory)
         {
             //TODO: ADD LOGIC TO VALIDATE POCO INSTANCE HERE
@@ -72,23 +63,27 @@ namespace Alta.EFCore.Repositories
             return createLineInventory;*/
             throw new NotImplementedException();
         }
-
-
-
-        public Task SetHeartbeatConfirmAsync()
+        
+        public async Task SetHeartbeatConfirmAsync(HeartbeatInitiate newHeartbeatInitiate, string message)
         {
-            throw new NotImplementedException();
+            HeartbeatInitiate heartbeat = await _context.HeartbeatInitiate.FirstAsync(entity =>
+                entity.TranDT == newHeartbeatInitiate.TranDT && entity.WCSId == newHeartbeatInitiate.WCSId && entity.WHId == newHeartbeatInitiate.WHId);
+            heartbeat.ResponseDatetime = DateTime.Now;
+            heartbeat.MessageReceived = message;
+            _context.HeartbeatInitiate.Update(heartbeat);
         }
-
-
-
-        public Task SetLoadDetailAsync()
+        
+        public async Task SetLoadDetailAsync(LoadDetail loadDetail, bool noted, string message)
         {
-            throw new NotImplementedException();
+            RequestInitiate requestInitiate = await _context.RequestInitiate.FirstAsync(
+                e => e.CreationDatetime > DateTime.Now.AddDays(-1) && e.LODNum == loadDetail.LODNum);
+            requestInitiate.Noted = noted;
+            requestInitiate.MessageReceived = message;
+            requestInitiate.ResponseDatetime = DateTime.Now;
+            requestInitiate.Line = loadDetail.LODNum.LastChars(2) ?? loadDetail.LODNum_DEFAULT;
+            _context.RequestInitiate.Update(requestInitiate);
         }
-
-
-
+        
         public Task SetLoadErrorlAsync()
         {
             throw new NotImplementedException();

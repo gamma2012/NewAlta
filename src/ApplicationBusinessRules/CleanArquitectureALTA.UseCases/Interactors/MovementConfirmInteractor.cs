@@ -30,8 +30,7 @@ namespace Alta.UseCases.Interactor
             //TODO: add maping from DTO to log
             string uri = "https://www.mockachino.com/30736d33-ce94-49/MOVEMENT_CONFIRM";
             await _loggingRepository.InsertLogAsync(new Log());
-            TransactionResult result = await _primeClient.SendMessage(uri, movmentConfirmDTO);
-            Console.WriteLine("result: " + result.ToJson());
+            await _primeClient.SendMessage(uri, movmentConfirmDTO);
             await Task.CompletedTask;
         }
     }

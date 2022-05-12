@@ -18,6 +18,10 @@ namespace Alta.Utils
         {
             return JsonSerializer.Deserialize<T>(s);
         }
+        public static T FromJson<T>(this string s, Type type)
+        {
+            return (T) JsonSerializer.Deserialize(s, type);
+        }
 
     }
 }

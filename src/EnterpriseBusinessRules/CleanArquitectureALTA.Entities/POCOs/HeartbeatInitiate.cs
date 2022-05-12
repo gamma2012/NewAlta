@@ -9,6 +9,7 @@ namespace Alta.Entities.POCOs
         public string WHId { get; set; } // (varchar(50), null)
         public string WCSId { get; set; } // (varchar(50), null)
         public string Text { get; set; } // (varchar(MAX), null)
+        
         public DateTime ResponseDatetime { get; set; } // (datetime, null)
         public string MessageReceived { get; set; } // (varchar(MAX), null)
         public DateTime CreationDatetime { get; set; } // (datetime, null) | CONSTRAINT: default value = getdate()

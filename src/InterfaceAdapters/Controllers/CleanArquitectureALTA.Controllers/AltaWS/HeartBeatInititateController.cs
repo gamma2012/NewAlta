@@ -11,7 +11,7 @@ namespace CleanArquitectureALTA.Controllers.AltaWS
 {
     [Route("api/altaws")]
     [ApiController]
-    public class HeartBeatInititateController : ControllerBase
+    public class  HeartBeatInititateController : ControllerBase
     {
         private readonly IHeartBeatInitiateInputPort _heartBeatInitiateInputPort;
         public HeartBeatInititateController(IHeartBeatInitiateInputPort heartBeatInitiateInputPort)

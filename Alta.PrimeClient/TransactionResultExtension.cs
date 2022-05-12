@@ -1,12 +1,9 @@
-﻿using Alta.DTOs.DtoAbstraction;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Net.Http;
-using System.Text;
+﻿using System.Net.Http;
 using System.Threading.Tasks;
+using Alta.DTOs.DtoAbstraction;
+using Alta.DTOs.HttpDTOs;
 
-namespace Alta.DTOs.HttpDTOs
+namespace Alta.PrimeClient
 {
     public static class TransactionResultExtension
     {

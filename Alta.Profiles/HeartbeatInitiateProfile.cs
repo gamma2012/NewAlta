@@ -20,6 +20,13 @@ namespace Alta.Profiles
                .ForPath(poco => poco.WHId, opts => opts.MapFrom(dto => dto.HEARTBEATINITIATE.CTRLSEG.WH_ID))
                .ForPath(poco => poco.WCSId, opts => opts.MapFrom(dto => dto.HEARTBEATINITIATE.CTRLSEG.WCS_ID))
                .ForPath(poco => poco.Text, opts => opts.MapFrom(dto => dto.HEARTBEATINITIATE.HEARTBEATSEG.TEXT));
+
+            CreateMap<HeartBeatConfirmDTO, HeartbeatInitiate>()
+                .ReverseMap()
+                .ForPath(dto => dto.HeartBeatConfirm.CtrlSeg.Trandt, opts => opts.MapFrom(poco => poco.TranDT))
+                .ForPath(dto => dto.HeartBeatConfirm.CtrlSeg.Tranid, opts => opts.MapFrom(poco => poco.TranId))
+                .ForPath(dto => dto.HeartBeatConfirm.CtrlSeg.WcsId, opts => opts.MapFrom(poco => poco.WCSId))
+                .ForPath(dto => dto.HeartBeatConfirm.CtrlSeg.HeartBeatConfirmSeg.TEXT, opts => opts.MapFrom(poco => poco.Text));
         }
     }
 }

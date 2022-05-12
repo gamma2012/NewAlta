@@ -15,10 +15,10 @@ namespace Alta.Entities.Interfaces
         public Task InsertLogAsync();
         public Task<CreateLineInventory> SaveDataToPrimeAsync(CreateLineInventory createLineInventory);
         public Task SaveDataFromPrimeAsync();
-        public Task SetHeartbeatConfirmAsync();
-        public Task SetLoadDetailAsync();
+        public Task SetHeartbeatConfirmAsync(HeartbeatInitiate newHeartbeatInitiate, string message);
+        public Task SetLoadDetailAsync(LoadDetail loadDetail, bool noted, string message);
         public Task SetLoadErrorlAsync();
-        public Task InsertRequestInitiateAsync();
+        public Task InsertRequestInitiateAsync(RequestInitiate requestInitiate);
         public Task<HeartbeatInitiate> InsertHeartbeatInitiateAsync(HeartbeatInitiate heartbeatInitiate);
         public Task<IEnumerable<RequestInbox>> CheckReprocessAsync();
         public Task InsertRequestToReprocessAsync();

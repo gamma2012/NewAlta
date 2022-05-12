@@ -34,7 +34,7 @@ namespace Alta.Controllers.Login
         public async Task<IActionResult> Login([FromBody]UserDTO user)
         {
             //Handle user and check if it exists and credentials are correct.
-            await _loginInputPort.Handle(user);
+            await this._loginInputPort.Handle(user);
             LoginPresenter presenter = ((LoginPresenter)_loginOutputPort);
 
             //if non-valid return Unauthorized.
@@ -56,7 +56,6 @@ namespace Alta.Controllers.Login
 
         [Authorize]
         [HttpGet("/CheckLogin")]
-
         public async Task<IActionResult> CheckLogin()
         {
             return Ok();

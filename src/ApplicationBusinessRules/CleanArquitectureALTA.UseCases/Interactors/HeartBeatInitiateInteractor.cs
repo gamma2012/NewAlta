@@ -15,33 +15,28 @@ namespace Alta.UseCases.Interactors
 {
     public class HeartBeatInitiateInteractor : IHeartBeatInitiateInputPort
     {
-        private readonly IHeartBeatInitiateOutputPort _heartbeatOutputPort;
         private readonly ILoggingRepository _loggingRepository;
         private readonly IAltaRepository _altaRepository;
         private readonly IUnitOfWork _unitOfWork;
         private readonly IPrimeClient _primeClient;
-        private readonly IMapper _mapper;
         private readonly PrimeWsOptions _primeWsOptions;
+        private readonly IMapper _mapper;
 
         public HeartBeatInitiateInteractor(IHeartBeatInitiateOutputPort heartbeatOutputPort,
             ILoggingRepository loggingRepository, IAltaRepository altaRepository, IPrimeClient primeClient,
             IMapper mapper, IUnitOfWork unitOfWork, IOptions<PrimeWsOptions> options)
             =>
-                (_heartbeatOutputPort, _loggingRepository, _altaRepository, _primeClient, _mapper, _unitOfWork, _primeWsOptions)
+                (_, _loggingRepository, _altaRepository, _primeClient, _mapper, _unitOfWork, _primeWsOptions)
                 = (heartbeatOutputPort, loggingRepository, altaRepository, primeClient, mapper, unitOfWork, options.Value);
-
-
+        
         public async Task Handle(HeartBeatInitiateDTO heartBeatInitiateDTO)
         {
-            //TODO: add maping from DTO to log
+            //TODO: add mapping from DTO to log
             string uri = _primeWsOptions.Endpoints["HeartBeatInitiate"];
+            await _primeClient.SendMessage(uri, heartBeatInitiateDTO);
             await _loggingRepository.InsertLogAsync(new Log());
-            TransactionResult result = await _primeClient.SendMessage(uri, heartBeatInitiateDTO);
-            
             await _altaRepository.InsertHeartbeatInitiateAsync(_mapper.Map<HeartbeatInitiate>(heartBeatInitiateDTO));
             await _unitOfWork.SaveChanges();
-
-            Console.WriteLine("result: " + result.ToJson());
             await Task.CompletedTask;
         }
     }

@@ -13,16 +13,13 @@ namespace Alta.UseCases.Interactors
 {
     public class CreateLineInventoryInteractor : ICreateLineInventoryInputPort
     {
-
-        private readonly ICreateLineInventoryOutputPort _createLineInventoryOutputPort;
         private readonly ILoggingRepository _loggingRepository;
         private readonly IPrimeClient _primeClient;
         private readonly PrimeWsOptions _primeWsOptions;
 
-        public CreateLineInventoryInteractor(ICreateLineInventoryOutputPort createLineInventoryOutputPort, ILoggingRepository loggingRepository, IPrimeClient primeClient, IOptions<PrimeWsOptions> options) 
+        public CreateLineInventoryInteractor(ILoggingRepository loggingRepository, IPrimeClient primeClient, IOptions<PrimeWsOptions> options) 
         {
             _loggingRepository = loggingRepository;
-            _createLineInventoryOutputPort = createLineInventoryOutputPort;
             _primeClient = primeClient;
             _primeWsOptions = options.Value;
         }
@@ -32,8 +29,7 @@ namespace Alta.UseCases.Interactors
             //TODO: add maping from DTO to log
             string uri = _primeWsOptions.Endpoints["CreateLineInventoryInIFD"];
             await _loggingRepository.InsertLogAsync(new Log());
-            TransactionResult result  = await _primeClient.SendMessage(uri,createLineInventoryDTO);
-            Console.WriteLine("result: "+ result.ToJson());
+            await _primeClient.SendMessage(uri, createLineInventoryDTO);
             await Task.CompletedTask;
         }
     }
