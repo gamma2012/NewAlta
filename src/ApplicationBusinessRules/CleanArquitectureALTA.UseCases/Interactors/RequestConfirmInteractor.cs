@@ -12,13 +12,9 @@ namespace Alta.UseCases.Interactors
     {
         public Task Handle(RequestConfirmDTO _requestConfirmDTO)
         {
-
-            // switch
-
-
             //TODO: registrar con mongo
             //TODO: publicar
-            Console.WriteLine("llegue");
+            
 
             return Task.CompletedTask;
 
