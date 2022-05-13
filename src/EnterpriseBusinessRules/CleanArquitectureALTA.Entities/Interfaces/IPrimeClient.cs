@@ -11,5 +11,7 @@ namespace Alta.Entities.Interfaces
     public interface IPrimeClient
     {
         Task<TransactionResult> SendMessage(string uri, DtoBase dto);
+
+        Task<TransactionResult> Authenticate(string uri, DtoBase dto);
     }
 }

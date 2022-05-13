@@ -22,6 +22,8 @@ namespace Alta.PrimeClient
             _httpClient.BaseAddress = new Uri(primeWsOptions.Url);
         }
 
+
+
         public async Task<TransactionResult> SendMessage(string uri, DtoBase dto)
         {
             HttpContent content = new StringContent(JsonSerializer.Serialize(dto));
