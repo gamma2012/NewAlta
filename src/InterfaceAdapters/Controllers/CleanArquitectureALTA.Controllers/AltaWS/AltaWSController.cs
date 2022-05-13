@@ -7,6 +7,7 @@ using Alta.DTOs;
 using Alta.DTOs.DtoAbstraction;
 using Alta.UseCasesPorts.Interfaces;
 using Alta.Utils;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Alta.Controllers.AltaWS
@@ -32,7 +33,7 @@ namespace Alta.Controllers.AltaWS
 
 
         // TODO => implement filters
-        //[Authorize]
+        [Authorize]
         [ServiceFilter(typeof(MessageFilter))]
         [HttpPost("SEND_MESSAGE")]
         public async Task<IActionResult> SEND_MESSAGE(JsonElement json)
