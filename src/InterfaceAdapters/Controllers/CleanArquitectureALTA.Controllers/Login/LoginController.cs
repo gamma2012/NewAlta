@@ -1,10 +1,13 @@
-﻿using Alta.DTOs;
+﻿using Alta.Controllers.Filters;
+using Alta.DTOs;
+using Alta.DTOs.DtoAbstraction;
 using Alta.Presenters.Interfaces;
 using Alta.Presenters.Presenters;
 using Alta.UseCasesPorts.Interfaces;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Filters;
 using System.Security.Claims;
 using System.Threading.Tasks;
 

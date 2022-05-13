@@ -3,7 +3,7 @@ using Alta.DTOs.DtoAbstraction;
 
 namespace Alta.DTOs
 {
-    public class LoadErrorDTO : DtoBase
+    public class LoadErrorDTO : RequestConfirmDTO
     {
         [JsonPropertyName("LOAD_ERROR")]
         public LOAD_ERROR LoadError { get; set; }

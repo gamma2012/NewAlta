@@ -3,7 +3,7 @@ using Alta.DTOs.DtoAbstraction;
 
 namespace Alta.DTOs
 {
-    public class LoadDetailedDTO : DtoBase
+    public class LoadDetailedDTO : RequestConfirmDTO
     {
         [JsonPropertyName("LOAD_DETAIL")]
         public LOAD_DETAIL LoadDetail { get; set; }
@@ -82,19 +82,19 @@ namespace Alta.DTOs
         public string UNTPAK { get; set; }
 
         [JsonPropertyName("FIFDTE")]
-        public string FIFDTE { get; set; }
+        public long FIFDTE { get; set; }
 
         [JsonPropertyName("MANDTE")]
-        public string MANDTE { get; set; }
+        public long MANDTE { get; set; }
 
         [JsonPropertyName("CATCH_QTY")]
         public string CATCH_QTY { get; set; }
 
         [JsonPropertyName("PHYFLG")]
-        public string PHYFLG { get; set; }
+        public long PHYFLG { get; set; }
 
         [JsonPropertyName("CNSG_FLG")]
-        public string CNSG_FLG { get; set; }
+        public long CNSG_FLG { get; set; }
 
         [JsonPropertyName("ASSET_TYP")]
         public string ASSET_TYP { get; set; }
@@ -115,33 +115,33 @@ namespace Alta.DTOs
         public string INV_ATTR_INT5 { get; set; }
 
         [JsonPropertyName("INV_ATTR_FLT1")]
-        public string INV_ATTR_FLT1 { get; set; }
+        public long INV_ATTR_FLT1 { get; set; }
 
         [JsonPropertyName("INV_ATTR_FLT2")]
-        public string INV_ATTR_FLT2 { get; set; }
+        public long INV_ATTR_FLT2 { get; set; }
 
         [JsonPropertyName("INV_ATTR_FLT3")]
-        public string INV_ATTR_FLT3 { get; set; }
+        public long INV_ATTR_FLT3 { get; set; }
 
         [JsonPropertyName("CSTMS_BOND_FLG")]
-        public string CSTMS_BOND_FLG { get; set; }
+        public long CSTMS_BOND_FLG { get; set; }
 
         [JsonPropertyName("DTY_STMP_FLG")]
-        public string DTY_STMP_FLG { get; set; }
+        public long DTY_STMP_FLG { get; set; }
 
         [JsonPropertyName("LOAD_ATTR1_FLG")]
-        public string LOAD_ATTR1_FLG { get; set; }
+        public long LOAD_ATTR1_FLG { get; set; }
 
         [JsonPropertyName("LOAD_ATTR2_FLG")]
-        public string LOAD_ATTR2_FLG { get; set; }
+        public long LOAD_ATTR2_FLG { get; set; }
 
         [JsonPropertyName("LOAD_ATTR3_FLG")]
-        public string LOAD_ATTR3_FLG { get; set; }
+        public long LOAD_ATTR3_FLG { get; set; }
 
         [JsonPropertyName("LOAD_ATTR4_FLG")]
-        public string LOAD_ATTR4_FLG { get; set; }
+        public long LOAD_ATTR4_FLG { get; set; }
 
         [JsonPropertyName("LOAD_ATTR5_FLG")]
-        public string LOAD_ATTR5_FLG { get; set; }
+        public long LOAD_ATTR5_FLG { get; set; }
     }
 }

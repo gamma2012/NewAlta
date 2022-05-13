@@ -1,3 +1,4 @@
+using Alta.Controllers.Filters;
 using Alta.IoC;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -30,6 +31,7 @@ namespace ALTA.API
         {
 
             services.AddControllers();
+            services.AddScoped<MessageFilter>();
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "CleanArquitectureALTA.API", Version = "v1" });
