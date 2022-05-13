@@ -20,6 +20,8 @@ namespace Alta.UseCases
             services.AddTransient<IMovementConfirmInputPort, MovementConfirmInteractor>();
             services.AddTransient<IRequestInitiateInputPort, RequestInitiateInteractor>();
             services.AddTransient<ILoginInputPort, LoginInteractor>();
+            services.AddTransient<IRequestConfirmInputPort, RequestConfirmInteractor>();
+            services.AddTransient<IHeartBeatConfirmInputPort, HeartBeatConfirmInteractor>();
 
             services.AddAutoMapper(typeof(ProfileBase), typeof(DependencyContainer));
             return services;

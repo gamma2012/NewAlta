@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using Alta.Controllers.Filters;
 using Alta.DTOs;
 using Alta.DTOs.DtoAbstraction;
+using Alta.UseCasesPorts.Interfaces;
 using Alta.Utils;
 using Microsoft.AspNetCore.Mvc;
 
@@ -14,6 +15,15 @@ namespace Alta.Controllers.AltaWS
     [ApiController]
     public class AltaWSController : ControllerBase //ControllerBase is used because allow you to use multiple methods such as Ok(); instead of OkObject
     {
+
+        private readonly IRequestConfirmInputPort _requestConfirmInputPort;
+        private readonly IHeartBeatConfirmInputPort _heartBeatConfirmInputPort;
+
+        public AltaWSController(IRequestConfirmInputPort requestConfirmInputPort, IHeartBeatConfirmInputPort heartBeatConfirmInputPort)
+        {
+            _requestConfirmInputPort = requestConfirmInputPort;
+            _heartBeatConfirmInputPort = heartBeatConfirmInputPort;
+        }
 
         //We use async Task because when we have multiple request we might have troubles 
         // IActionResult Allow us to make the return with different status
@@ -28,6 +38,13 @@ namespace Alta.Controllers.AltaWS
         public async Task<IActionResult> SEND_MESSAGE(JsonElement json)
         {
             DtoBase dto = (DtoBase)HttpContext.Items["data"];
+            if(dto is LoadDetailedDTO || dto is LoadErrorDTO){
+                await _requestConfirmInputPort.Handle((RequestConfirmDTO)dto);
+            }
+            else if (dto is HeartBeatConfirmDTO)
+            {
+                await _heartBeatConfirmInputPort.Handle((HeartBeatConfirmDTO)dto);
+            }
             return Ok();
         }
         

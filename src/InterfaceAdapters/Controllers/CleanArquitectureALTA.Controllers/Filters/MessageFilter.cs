@@ -15,8 +15,6 @@ namespace Alta.Controllers.Filters
     {
         public async Task OnActionExecutionAsync(ActionExecutingContext context, ActionExecutionDelegate next)
         {
-            //using StreamReader sr = new StreamReader(context.ActionArguments.Values.FirstOrDefault());
-            Console.WriteLine("a");
             JsonElement json = JsonDocument.Parse(context.ActionArguments.FirstOrDefault().Value.ToString()).RootElement;
             bool Has(string prop) => json.TryGetProperty(prop, out _);
 
