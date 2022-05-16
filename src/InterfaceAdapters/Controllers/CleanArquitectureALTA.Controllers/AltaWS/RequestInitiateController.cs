@@ -22,14 +22,7 @@ namespace CleanArquitectureALTA.Controllers.AltaWS
 
         public async Task<IActionResult> RequestInitiate(RequestInitiateDTO data)
         {
-            try
-            {
-                await _requestInitiateInputPort.Handle(data);
-            }
-            catch (Exception e)
-            {
-
-            }
+            await _requestInitiateInputPort.Handle(data);
 
             return Ok();
         }

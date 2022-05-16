@@ -2,8 +2,10 @@
 using Alta.DTOs.HttpDTOs;
 using Alta.Entities.Interfaces;
 using Alta.Entities.POCOs;
+using Alta.PrimeClient;
 using Alta.UseCasesPorts.Interfaces;
 using Alta.Utils;
+using Microsoft.Extensions.Options;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -17,18 +19,19 @@ namespace Alta.UseCases.Interactor
         private readonly IMovementConfirmOutputPort _movementconfirmoutputport;
         private readonly ILoggingRepository _loggingRepository;
         private readonly IPrimeClient _primeClient;
+        private readonly PrimeWsOptions _primeWsOptions;
 
-        public MovementConfirmInteractor(IMovementConfirmOutputPort movementconfirmoutputport, ILoggingRepository loggingRepository, IPrimeClient primeClient)
-        {
-            _loggingRepository = loggingRepository;
-            _movementconfirmoutputport = movementconfirmoutputport;
-            _primeClient = primeClient;
-        }
+        public MovementConfirmInteractor(IMovementConfirmOutputPort movementconfirmoutputport, ILoggingRepository loggingRepository,
+            IPrimeClient primeClient, IOptions<PrimeWsOptions> options) => 
+            (_loggingRepository, _movementconfirmoutputport, _primeClient, _primeWsOptions) = 
+            (loggingRepository, movementconfirmoutputport, primeClient, options.Value);
+       
 
         public async Task Handle(MovementConfirmDTO movmentConfirmDTO) 
         {
             //TODO: add maping from DTO to log
-            string uri = "https://www.mockachino.com/30736d33-ce94-49/MOVEMENT_CONFIRM";
+            
+            string uri = _primeWsOptions.Endpoints["MovementConfirm"];
             await _loggingRepository.InsertLogAsync(new Log());
             await _primeClient.SendMessage(uri, movmentConfirmDTO);
             await Task.CompletedTask;

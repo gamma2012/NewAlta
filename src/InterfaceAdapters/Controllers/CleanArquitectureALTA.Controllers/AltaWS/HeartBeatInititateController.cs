@@ -22,13 +22,7 @@ namespace CleanArquitectureALTA.Controllers.AltaWS
         [HttpPost("HEARTBEAT_INITIATE")]
         public async Task<IActionResult> HeartBeatInitiate(HeartBeatInitiateDTO data)
         {
-            try
-            {
-                await _heartBeatInitiateInputPort.Handle(data);
-            } catch (Exception e)
-            {
-
-            }
+            await _heartBeatInitiateInputPort.Handle(data);
 
             return Ok();
         }

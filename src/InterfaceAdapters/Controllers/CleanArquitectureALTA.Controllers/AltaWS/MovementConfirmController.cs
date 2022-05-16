@@ -22,14 +22,7 @@ namespace CleanArquitectureALTA.Controllers.AltaWS
         [HttpPost("MOVEMENT_CONFIRM")]
         public async Task<IActionResult> MovementConfirm(MovementConfirmDTO data)
         {
-            try
-            {
-                await _movementConfirmInputPort.Handle(data);
-            }
-            catch (Exception e)
-            {
-
-            }
+            await _movementConfirmInputPort.Handle(data);
 
             return Ok();
         }

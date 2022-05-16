@@ -27,16 +27,8 @@ namespace Alta.Controllers.AltaWS
         [HttpPost("CREATE_LINE_INVENTORY_IN_IFD")]
         public async Task<IActionResult> CreateLineInventoryInIFD(CreateLineInventoryDTO data)
         {
-            TransactionResult result = new TransactionResult();
-            
-            try
-            {
-                await this._createLineInventoryInputPort.Handle(data);
-            }catch(Exception ex)
-            {
-                //TODO exception filter
-            }
-
+            await this._createLineInventoryInputPort.Handle(data);
+            throw new Exception();
 
             return Ok();
         }
