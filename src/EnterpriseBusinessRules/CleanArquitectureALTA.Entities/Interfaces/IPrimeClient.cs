@@ -12,6 +12,6 @@ namespace Alta.Entities.Interfaces
     {
         Task<TransactionResult> SendMessage(string uri, DtoBase dto);
 
-        Task<TransactionResult> Authenticate(string uri);
+        Task<TransactionResult> Authenticate();
     }
 }

@@ -25,9 +25,10 @@ namespace Alta.PrimeClient
             _httpClient.BaseAddress = new Uri(_primeWsOptions.Url);
         }
 
-        public async Task<TransactionResult> Authenticate(string uri)
+        public async Task<TransactionResult> Authenticate()
         {
             var result = await _httpClient.PostAsync(_primeWsOptions.Endpoints["Authentication"], new StringContent(_primeWsOptions.Credentials.ToJson()));
+            
             return await result.ToResult();
         }
 

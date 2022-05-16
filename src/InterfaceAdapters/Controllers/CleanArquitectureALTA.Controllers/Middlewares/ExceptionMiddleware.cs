@@ -1,5 +1,6 @@
 ﻿using Alta.Entities.POCOs;
 using Alta.Utils;
+using CustomExceptions;
 using Microsoft.AspNetCore.Http;
 using System;
 using System.Collections.Generic;
@@ -35,18 +36,13 @@ namespace Alta.Controllers.Middlewares
         {
             context.Response.ContentType = "application/json";
             context.Response.StatusCode = (int)HttpStatusCode.InternalServerError;
-            /*string message = "";
 
-            if(ex != null)
-            {
-
-            }*/
 
             await context.Response.WriteAsync(new ErrorDetails
             {
                 StatusCode = context.Response.StatusCode,
-                Message = "ejemplillo"
-            }.ToJson());
+                Message = ex.Message
+            }.ToJson()) ;
         }
     }
 }

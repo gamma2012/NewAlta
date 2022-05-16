@@ -28,6 +28,7 @@ namespace Alta.UseCases.Interactors
         {
             //TODO: add maping from DTO to log
             string uri = _primeWsOptions.Endpoints["CreateLineInventoryInIFD"];
+            await _primeClient.Authenticate();
             await _loggingRepository.InsertLogAsync(new Log());
             await _primeClient.SendMessage(uri, createLineInventoryDTO);
             await Task.CompletedTask;

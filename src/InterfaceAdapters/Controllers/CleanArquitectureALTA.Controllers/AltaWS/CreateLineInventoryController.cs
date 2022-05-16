@@ -1,6 +1,7 @@
 ﻿using Alta.DTOs;
 using Alta.DTOs.HttpDTOs;
 using Alta.UseCasesPorts.Interfaces;
+using CustomExceptions;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
@@ -27,8 +28,12 @@ namespace Alta.Controllers.AltaWS
         [HttpPost("CREATE_LINE_INVENTORY_IN_IFD")]
         public async Task<IActionResult> CreateLineInventoryInIFD(CreateLineInventoryDTO data)
         {
-            await this._createLineInventoryInputPort.Handle(data);
-            throw new Exception();
+
+                await this._createLineInventoryInputPort.Handle(data);
+        
+                throw new CreateLineInventoryException();
+
+            
 
             return Ok();
         }

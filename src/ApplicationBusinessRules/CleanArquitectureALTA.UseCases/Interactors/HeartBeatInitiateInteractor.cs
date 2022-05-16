@@ -33,6 +33,7 @@ namespace Alta.UseCases.Interactors
         {
             //TODO: add mapping from DTO to log
             string uri = _primeWsOptions.Endpoints["HeartBeatInitiate"];
+            await _primeClient.Authenticate();
             await _primeClient.SendMessage(uri, heartBeatInitiateDTO);
             await _loggingRepository.InsertLogAsync(new Log());
             await _altaRepository.InsertHeartbeatInitiateAsync(_mapper.Map<HeartbeatInitiate>(heartBeatInitiateDTO));

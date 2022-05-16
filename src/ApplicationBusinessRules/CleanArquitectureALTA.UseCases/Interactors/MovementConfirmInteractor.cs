@@ -32,6 +32,7 @@ namespace Alta.UseCases.Interactor
             //TODO: add maping from DTO to log
             
             string uri = _primeWsOptions.Endpoints["MovementConfirm"];
+            await _primeClient.Authenticate();
             await _loggingRepository.InsertLogAsync(new Log());
             await _primeClient.SendMessage(uri, movmentConfirmDTO);
             await Task.CompletedTask;

@@ -4,6 +4,7 @@ using Alta.DTOs;
 using Alta.DTOs.HttpDTOs;
 using Alta.Entities.Interfaces;
 using Alta.Entities.POCOs;
+using Alta.PrimeClient;
 using Alta.UseCasesPorts.Interfaces;
 using Alta.Utils;
 using AutoMapper;
@@ -18,6 +19,7 @@ namespace Alta.UseCases.Interactors
         private readonly IAltaRepository _altaRepository;
         private readonly IUnitOfWork _unitOfWork;
         private readonly IMapper _mapper;
+        private readonly PrimeWsOptions _primeWsOptions;
 
         public RequestInitiateInteractor(IRequestInitiateOutputPort requestinitiateoutputport, ILoggingRepository loggingRepository, IPrimeClient primeClient, IAltaRepository altaRepository, IMapper mapper, IUnitOfWork unitOfWork)
         {
@@ -32,7 +34,8 @@ namespace Alta.UseCases.Interactors
         public async Task Handle(RequestInitiateDTO requestInitiateDTO)
         {
             //TODO: add maping from DTO to log
-            string uri = "https://www.mockachino.com/30736d33-ce94-49/REQUEST_INITIATE";
+            string uri = _primeWsOptions.Endpoints["RequestInitiate"]; 
+            await _primeClient.Authenticate();
             await _loggingRepository.InsertLogAsync(new Log());
             TransactionResult result = await _primeClient.SendMessage(uri, requestInitiateDTO);
             await _altaRepository.InsertRequestInitiateAsync(_mapper.Map<RequestInitiate>(requestInitiateDTO));
