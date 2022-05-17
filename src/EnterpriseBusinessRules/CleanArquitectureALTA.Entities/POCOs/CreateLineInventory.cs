@@ -2,7 +2,6 @@
 {
     public class CreateLineInventory : Entity // JSON File "CREATE_LINE_INVENTORY", tipos inferidos del documento y las demas tablas.
     {
-        public int ID { get; set; } // (int, not null)
         public string TRANID { get; set; } // (varchar(50), null)
         public string TRANDT { get; set; } // (varchar(50), null)
         public string WH_ID{ get; set; } // (varchar(50), null)
