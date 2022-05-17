@@ -1,13 +1,7 @@
 ﻿using Alta.Controllers.Filters;
 using Alta.DTOs;
-using Alta.DTOs.HttpDTOs;
 using Alta.UseCasesPorts.Interfaces;
-using CustomExceptions;
 using Microsoft.AspNetCore.Mvc;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
 
 namespace Alta.Controllers.AltaWS
@@ -20,17 +14,12 @@ namespace Alta.Controllers.AltaWS
 
         private readonly ICreateLineInventoryInputPort _createLineInventoryInputPort;
 
-        public CreateLineInventoryController(ICreateLineInventoryInputPort createLineInventoryInputPort)
-        {
-            _createLineInventoryInputPort = createLineInventoryInputPort;
-        }
+        public CreateLineInventoryController(ICreateLineInventoryInputPort createLineInventoryInputPort) =>
+            (_createLineInventoryInputPort) = (createLineInventoryInputPort);
 
-
-        //TODO validate header filter
         [HttpPost("CREATE_LINE_INVENTORY_IN_IFD")]
         public async Task<IActionResult> CreateLineInventoryInIFD(CreateLineInventoryDTO data)
         {
-
             await this._createLineInventoryInputPort.Handle(data);
 
             return Ok();

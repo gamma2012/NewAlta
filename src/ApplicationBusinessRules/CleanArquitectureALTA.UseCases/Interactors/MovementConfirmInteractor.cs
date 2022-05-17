@@ -1,15 +1,9 @@
 ﻿using Alta.DTOs;
-using Alta.DTOs.HttpDTOs;
 using Alta.Entities.Interfaces;
 using Alta.Entities.POCOs;
 using Alta.PrimeClient;
 using Alta.UseCasesPorts.Interfaces;
-using Alta.Utils;
 using Microsoft.Extensions.Options;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
 
 namespace Alta.UseCases.Interactor
@@ -28,9 +22,7 @@ namespace Alta.UseCases.Interactor
        
 
         public async Task Handle(MovementConfirmDTO movmentConfirmDTO) 
-        {
-            //TODO: add maping from DTO to log
-            
+        {            
             string uri = _primeWsOptions.Endpoints["MovementConfirm"];
             await _primeClient.Authenticate();
             await _loggingRepository.InsertLogAsync(new Log());

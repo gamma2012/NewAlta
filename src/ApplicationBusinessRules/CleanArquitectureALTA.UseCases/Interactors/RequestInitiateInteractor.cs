@@ -21,19 +21,13 @@ namespace Alta.UseCases.Interactors
         private readonly IMapper _mapper;
         private readonly PrimeWsOptions _primeWsOptions;
 
-        public RequestInitiateInteractor(IRequestInitiateOutputPort requestinitiateoutputport, ILoggingRepository loggingRepository, IPrimeClient primeClient, IAltaRepository altaRepository, IMapper mapper, IUnitOfWork unitOfWork)
-        {
-            _loggingRepository = loggingRepository;
-            _requestinitiateoutputport = requestinitiateoutputport;
-            _primeClient = primeClient;
-            _altaRepository = altaRepository;
-            _mapper = mapper;
-            _unitOfWork = unitOfWork;
-        }
+        public RequestInitiateInteractor(IRequestInitiateOutputPort requestinitiateoutputport, ILoggingRepository loggingRepository, 
+                                        IPrimeClient primeClient, IAltaRepository altaRepository, IMapper mapper, IUnitOfWork unitOfWork) =>
+            (_loggingRepository, _requestinitiateoutputport, _primeClient, _altaRepository, _mapper, _unitOfWork) 
+            = (loggingRepository, requestinitiateoutputport, primeClient, altaRepository, mapper, unitOfWork);
 
         public async Task Handle(RequestInitiateDTO requestInitiateDTO)
         {
-            //TODO: add maping from DTO to log
             string uri = _primeWsOptions.Endpoints["RequestInitiate"]; 
             await _primeClient.Authenticate();
             await _loggingRepository.InsertLogAsync(new Log());

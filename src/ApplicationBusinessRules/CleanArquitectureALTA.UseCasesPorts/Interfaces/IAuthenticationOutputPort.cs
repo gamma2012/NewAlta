@@ -8,8 +8,6 @@ namespace Alta.UseCasesPorts.Interfaces
 {
     public interface IAuthenticationOutputPort
     {
-
         public Task Handle();
-
     }
 }

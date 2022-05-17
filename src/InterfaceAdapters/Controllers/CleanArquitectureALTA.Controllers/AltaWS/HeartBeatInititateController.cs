@@ -16,10 +16,8 @@ namespace CleanArquitectureALTA.Controllers.AltaWS
     public class  HeartBeatInititateController : ControllerBase
     {
         private readonly IHeartBeatInitiateInputPort _heartBeatInitiateInputPort;
-        public HeartBeatInititateController(IHeartBeatInitiateInputPort heartBeatInitiateInputPort)
-        {
-            _heartBeatInitiateInputPort = heartBeatInitiateInputPort;
-        }
+        public HeartBeatInititateController(IHeartBeatInitiateInputPort heartBeatInitiateInputPort) => 
+            (_heartBeatInitiateInputPort) = (heartBeatInitiateInputPort);
 
         [HttpPost("HEARTBEAT_INITIATE")]
         public async Task<IActionResult> HeartBeatInitiate(HeartBeatInitiateDTO data)

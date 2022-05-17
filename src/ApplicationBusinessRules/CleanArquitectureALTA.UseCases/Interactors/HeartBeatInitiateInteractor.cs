@@ -1,13 +1,9 @@
-﻿using System;
-using System.Net;
-using System.Threading.Tasks;
+﻿using System.Threading.Tasks;
 using Alta.DTOs;
-using Alta.DTOs.HttpDTOs;
 using Alta.Entities.Interfaces;
 using Alta.Entities.POCOs;
 using Alta.PrimeClient;
 using Alta.UseCasesPorts.Interfaces;
-using Alta.Utils;
 using AutoMapper;
 using Microsoft.Extensions.Options;
 
@@ -31,8 +27,8 @@ namespace Alta.UseCases.Interactors
         
         public async Task Handle(HeartBeatInitiateDTO heartBeatInitiateDTO)
         {
-            //TODO: add mapping from DTO to log
             string uri = _primeWsOptions.Endpoints["HeartBeatInitiate"];
+
             await _primeClient.Authenticate();
             await _primeClient.SendMessage(uri, heartBeatInitiateDTO);
             await _loggingRepository.InsertLogAsync(new Log());

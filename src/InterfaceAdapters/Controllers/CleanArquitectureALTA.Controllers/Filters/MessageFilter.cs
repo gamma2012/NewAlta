@@ -1,11 +1,7 @@
 ﻿using Alta.DTOs;
 using Alta.DTOs.DtoAbstraction;
 using Microsoft.AspNetCore.Mvc.Filters;
-using System;
-using System.Collections.Generic;
-using System.IO;
 using System.Linq;
-using System.Text;
 using System.Text.Json;
 using System.Threading.Tasks;
 

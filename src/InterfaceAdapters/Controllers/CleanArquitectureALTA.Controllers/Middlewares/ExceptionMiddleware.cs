@@ -1,13 +1,9 @@
 ﻿using Alta.Entities.Interfaces;
 using Alta.Entities.POCOs;
 using Alta.Utils;
-using CustomExceptions;
 using Microsoft.AspNetCore.Http;
 using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Net;
-using System.Text;
 using System.Threading.Tasks;
 
 namespace Alta.Controllers.Middlewares
@@ -44,9 +40,6 @@ namespace Alta.Controllers.Middlewares
                 StatusCode = context.Response.StatusCode,
                 Message = "Error from: " + context.Request.Path
             }.ToJson());
-
-
-
         }
     }
 }

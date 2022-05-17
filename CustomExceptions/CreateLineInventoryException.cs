@@ -8,15 +8,9 @@ namespace CustomExceptions
 {
     public class CreateLineInventoryException : Exception
     {
-        public CreateLineInventoryException()
-        {
-            
-        }
+        public CreateLineInventoryException() { }
 
-        public CreateLineInventoryException(string message, Exception innerException)
-        {
-            
-        }
+        public CreateLineInventoryException(string message, Exception innerException) { }
         
     }
 

@@ -1,12 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text.Json;
+﻿using System.Text.Json;
 using System.Threading.Tasks;
 using Alta.Controllers.Filters;
 using Alta.DTOs;
 using Alta.DTOs.DtoAbstraction;
 using Alta.UseCasesPorts.Interfaces;
-using Alta.Utils;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
@@ -20,11 +17,8 @@ namespace Alta.Controllers.AltaWS
         private readonly IRequestConfirmInputPort _requestConfirmInputPort;
         private readonly IHeartBeatConfirmInputPort _heartBeatConfirmInputPort;
 
-        public AltaWSController(IRequestConfirmInputPort requestConfirmInputPort, IHeartBeatConfirmInputPort heartBeatConfirmInputPort)
-        {
-            _requestConfirmInputPort = requestConfirmInputPort;
-            _heartBeatConfirmInputPort = heartBeatConfirmInputPort;
-        }
+        public AltaWSController(IRequestConfirmInputPort requestConfirmInputPort, IHeartBeatConfirmInputPort heartBeatConfirmInputPort) => 
+            (_requestConfirmInputPort, _heartBeatConfirmInputPort) = (requestConfirmInputPort, heartBeatConfirmInputPort);
 
         //We use async Task because when we have multiple request we might have troubles 
         // IActionResult Allow us to make the return with different status

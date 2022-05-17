@@ -6,7 +6,6 @@ using Alta.Entities.Interfaces;
 using Alta.Entities.POCOs;
 using Alta.PrimeClient;
 using Alta.UseCasesPorts.Interfaces;
-using Alta.Utils;
 using Microsoft.Extensions.Options;
 
 namespace Alta.UseCases.Interactors
@@ -17,16 +16,11 @@ namespace Alta.UseCases.Interactors
         private readonly IPrimeClient _primeClient;
         private readonly PrimeWsOptions _primeWsOptions;
 
-        public CreateLineInventoryInteractor(ILoggingRepository loggingRepository, IPrimeClient primeClient, IOptions<PrimeWsOptions> options) 
-        {
-            _loggingRepository = loggingRepository;
-            _primeClient = primeClient;
-            _primeWsOptions = options.Value;
-        }
+        public CreateLineInventoryInteractor(ILoggingRepository loggingRepository, IPrimeClient primeClient, IOptions<PrimeWsOptions> options) => 
+            (_loggingRepository, _primeClient, _primeWsOptions) = (loggingRepository, primeClient, options.Value);
 
         public async Task Handle(CreateLineInventoryDTO createLineInventoryDTO)
         {
-            //TODO: add maping from DTO to log
             string uri = _primeWsOptions.Endpoints["CreateLineInventoryInIFD"];
             await _primeClient.Authenticate();
             await _loggingRepository.InsertLogAsync(new Log());

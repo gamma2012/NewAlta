@@ -15,11 +15,7 @@ namespace Alta.UseCases.Interactors
         private readonly IMapper _mapper;
 
         public HeartBeatConfirmInteractor(IAltaRepository altaRepository, IMapper mapper, ILoggingRepository logging)
-        {
-            _altaRepository = altaRepository;
-            _mapper = mapper;
-            _logging = logging;
-        }
+            => (_altaRepository, _mapper, _logging) = (altaRepository, mapper, logging);
 
         public async Task Handle(HeartBeatConfirmDTO heartBeatConfirmDto)
         {

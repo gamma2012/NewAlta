@@ -1,14 +1,9 @@
-﻿using Alta.Controllers.Filters;
-using Alta.DTOs;
-using Alta.DTOs.DtoAbstraction;
-using Alta.Presenters.Interfaces;
+﻿using Alta.DTOs;
 using Alta.Presenters.Presenters;
 using Alta.UseCasesPorts.Interfaces;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.Filters;
-using System.Security.Claims;
 using System.Threading.Tasks;
 
 namespace Alta.Controllers.Login
@@ -21,12 +16,8 @@ namespace Alta.Controllers.Login
         private readonly ILoginOutputPort _loginOutputPort;
         private readonly ILoginInputPort _loginInputPort;
 
-        public LoginController(ILoginOutputPort loginOutputPort, ILoginInputPort loginInputPort)
-        {
-            _loginOutputPort = loginOutputPort;
-            _loginInputPort = loginInputPort;
-        }
-
+        public LoginController(ILoginOutputPort loginOutputPort, ILoginInputPort loginInputPort) => 
+            (_loginOutputPort, _loginInputPort) = (loginOutputPort, loginInputPort);
 
         /// <summary>
         /// HTTP POST method using for user authentication
@@ -51,7 +42,6 @@ namespace Alta.Controllers.Login
 
         //Revisar si es necesario
         [HttpGet("/username/{username}/password/{password}")]
-
         public async Task<IActionResult> LoginByUsernameAndPassword(string username, string password)
         {
             return null;
