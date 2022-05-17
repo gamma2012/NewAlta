@@ -1,5 +1,6 @@
 ﻿using Alta.Entities.Interfaces;
 using Alta.Entities.POCOs;
+using Alta.Utils;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,7 +13,7 @@ namespace Alta.EFCore.Repositories
     {
         public async Task<Log> InsertLogAsync(Log log)
         {
-            Console.WriteLine(log);
+            Console.WriteLine(log.ToJson());
             return await Task.FromResult(log);
         }
     }

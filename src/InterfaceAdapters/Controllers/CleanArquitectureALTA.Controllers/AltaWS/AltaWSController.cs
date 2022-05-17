@@ -30,11 +30,8 @@ namespace Alta.Controllers.AltaWS
         // IActionResult Allow us to make the return with different status
         //When using IActionResult you won't be able to use a generic, usign ActionResult as class allow you to speciify a Generic in the return 
 
-
-
-        // TODO => implement filters
         [Authorize]
-        [ServiceFilter(typeof(MessageFilter))]
+        [MessageFilter]
         [HttpPost("SEND_MESSAGE")]
         public async Task<IActionResult> SEND_MESSAGE(JsonElement json)
         {

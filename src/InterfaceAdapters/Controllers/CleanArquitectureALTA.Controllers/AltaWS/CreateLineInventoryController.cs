@@ -1,4 +1,5 @@
-﻿using Alta.DTOs;
+﻿using Alta.Controllers.Filters;
+using Alta.DTOs;
 using Alta.DTOs.HttpDTOs;
 using Alta.UseCasesPorts.Interfaces;
 using CustomExceptions;
@@ -11,6 +12,7 @@ using System.Threading.Tasks;
 
 namespace Alta.Controllers.AltaWS
 {
+    [HeaderValidationFilter]
     [Route("api/altaws")]
     [ApiController]
     public class CreateLineInventoryController : ControllerBase
@@ -29,11 +31,7 @@ namespace Alta.Controllers.AltaWS
         public async Task<IActionResult> CreateLineInventoryInIFD(CreateLineInventoryDTO data)
         {
 
-                await this._createLineInventoryInputPort.Handle(data);
-        
-                throw new CreateLineInventoryException();
-
-            
+            await this._createLineInventoryInputPort.Handle(data);
 
             return Ok();
         }

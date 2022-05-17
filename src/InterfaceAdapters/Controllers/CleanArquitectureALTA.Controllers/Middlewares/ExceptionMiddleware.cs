@@ -1,4 +1,5 @@
-﻿using Alta.Entities.POCOs;
+﻿using Alta.Entities.Interfaces;
+using Alta.Entities.POCOs;
 using Alta.Utils;
 using CustomExceptions;
 using Microsoft.AspNetCore.Http;
@@ -20,7 +21,7 @@ namespace Alta.Controllers.Middlewares
             _next = next;
         }
 
-        public async Task InvokeAsync(HttpContext context)
+        public async Task InvokeAsync(HttpContext context, ILoggingRepository loggingRepository)
         {
             try
             {
@@ -28,6 +29,7 @@ namespace Alta.Controllers.Middlewares
             }
             catch (Exception ex)
             {
+                await loggingRepository.InsertLogAsync(new Log() { Description = ex.Message, Resource = context.Request.Path });
                 await HandleExceptionAsync(context, ex);
             }
         }
@@ -36,13 +38,15 @@ namespace Alta.Controllers.Middlewares
         {
             context.Response.ContentType = "application/json";
             context.Response.StatusCode = (int)HttpStatusCode.InternalServerError;
-
-
+            
             await context.Response.WriteAsync(new ErrorDetails
             {
                 StatusCode = context.Response.StatusCode,
-                Message = ex.Message
-            }.ToJson()) ;
+                Message = "Error from: " + context.Request.Path
+            }.ToJson());
+
+
+
         }
     }
 }

@@ -11,7 +11,7 @@ using System.Threading.Tasks;
 
 namespace Alta.Controllers.Filters
 {
-    public class MessageFilter : IAsyncActionFilter
+    public class MessageFilter : ActionFilterAttribute, IAsyncActionFilter
     {
         public async Task OnActionExecutionAsync(ActionExecutingContext context, ActionExecutionDelegate next)
         {

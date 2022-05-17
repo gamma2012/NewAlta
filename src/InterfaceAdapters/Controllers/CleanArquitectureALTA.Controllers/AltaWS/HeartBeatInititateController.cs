@@ -1,4 +1,5 @@
-﻿using Alta.DTOs;
+﻿using Alta.Controllers.Filters;
+using Alta.DTOs;
 using Alta.UseCasesPorts.Interfaces;
 using Microsoft.AspNetCore.Mvc;
 using System;
@@ -9,6 +10,7 @@ using System.Threading.Tasks;
 
 namespace CleanArquitectureALTA.Controllers.AltaWS
 {
+    [HeaderValidationFilter]
     [Route("api/altaws")]
     [ApiController]
     public class  HeartBeatInititateController : ControllerBase
